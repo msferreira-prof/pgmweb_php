@@ -1,0 +1,65 @@
+{
+
+    "deploy.reloaded": {
+
+        "showPopupOnSuccess": true,
+        "showPopupWhenFinished": 1,
+
+        "packages": [
+            {
+                "name": "Html",
+                "description": "Exercicios HTML",
+                
+                "files": [
+                    "**/*.html",
+                    "**/*.css",
+                    "**/*.jpg",
+                    "**/*.png"
+                ],
+
+                "deployOnSave": [
+                    "localwww"
+                ],
+
+                "fastCheckOnSave": true,
+            }, 
+            {
+                "name": "PHP",
+                "description": "Exercicios PHP",
+                
+                "files": [
+                    "**/*.html",
+                    "**/*.css",
+                    "**/*.js",
+                    "**/*.jpg",
+                    "**/*.png",
+                    "**/*.php"
+                ],
+
+                "deployOnSave": [
+                    "localphp"
+                ],
+
+                "fastCheckOnSave": true,
+            }
+
+
+        ],
+
+        "targets": [
+            {
+                "type": "local",
+                "name": "localwww",
+                "description": "Node.js Http Server para testes",
+                "dir": "E:/www"
+            },
+            {
+                "type": "local",
+                "name": "localphp",
+                "description": "Apache Http Server para testes",
+                "dir": "E:/xampp/htdocs"
+            },
+        ]
+    },
+    "php.validate.executablePath": "E:\\xampp\\php\\php.exe"
+}

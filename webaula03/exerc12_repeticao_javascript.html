@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Exerc 12 - Repetição</title>
+    </head>
+    <body>
+        <!--
+algortimo ExibirPesquisa
+variaveis
+    clubePref: literal
+    vlrSalario: real
+    localNascim: literal
+
+    qtdTorcedFigueirense: inteiro
+    qtdTorcedMarcilioDias: inteiro
+    qtdTorcedOutrosClubes: inteiro
+    
+    totalSalarioFiqueirense: real
+    mediaSalarioFigueirense: real
+    
+    qtdTorcedFloripaMarcilioDias: inteiro
+    qtdTorcedOutrasCidadesFigueirense: inteiro
+    
+    desejaContinuar: caracter
+    
+inicio
+
+    clubePref <- ""
+    vlrSalario <- 0
+    localNascim <- ""
+
+    qtdTorcedFigueirense <- 0
+    qtdTorcedMarcilioDias <- 0
+    qtdTorcedOutrosClubes <- 0
+    
+    totalSalarioFiqueirense <- 0
+    mediaSalarioFigueirense <- 0
+    qtdTorcedFloripaMarcilioDias <- 0
+    qtdTorcedOutrasCidadesFigueirense <- 0
+    
+    desejaContinuar <- 'S'
+    
+    enquanto desejaContinuar = 'S' faça
+    
+        /* entrada de dados */
+        escreva "Informe o seu Clube de Preferência ('FG - Figueirense', 'MD - Marcílio Dias' ou 'OC - Outros clubes')"
+		leia clubePref
+        
+        escreva "Informe o seu Salário"
+		leia vlrSalario
+
+        escreva "Informe o seu local de Nascimento ('F - Florianópolis' ou 'O - Outra cidade')
+		leia localNascim      
+	 
+        /* processamento */
+        se clubePref = "FG"
+            entao 
+                qtdTorcedFigueirense <- qtdTorcedFigueirense + 1
+                totalSalarioFiqueirense <- totalSalarioFiqueirense + vlrSalario
+                
+                se localNascim = "O" 
+                    entao  
+                        qtdTorcedOutrasCidadesFigueirense <- qtdTorcedOutrasCidadesFigueirense + 1
+                fim-se
+
+            senao 
+                se clubePref = "MD"
+                    entao 
+                        qtdTorcedMarcilioDias <- qtdTorcedMarcilioDias + 1
+                        
+                        se localNascim = "F"
+                            entao
+                                qtdTorcedFloripaMarcilioDias <- qtdTorcedFloripaMarcilioDias + 1
+                        fim-se
+                        
+                    senao
+                        qtdTorcedOutrosClubes <- qtdTorcedOutrosClubes + 1
+                fim-se
+        fim-se
+        
+        
+        escreva "Deseja continuar a pesquisa ('S - Sim' ou 'N - Não'?)"
+        leia desejaContinuar
+
+    fim-enquanto
+    
+    // calcula a média salarial dos torcedores do Figueirense
+    mediaSalarioFigueirense <- totalSalarioFiqueirense / qtdTorcedFigueirense
+    
+    // saida de dados
+  	escreva "O Número de torcedores do Figueirense é ", qtdTorcedFigueirense
+	escreva "O Número de torcedores do Marcílio Dias é ", qtdTorcedMarcilioDias
+	escreva "O Número de torcedores de Outros clubes é ", qtdTorcedOutrosClubes
+	
+	escreva "A média salarial da torcida do Figueirense é ", mediaSalarioFigueirense
+	
+	escreva "O Número de pessoas nascidas em Florianópolis e que torcem pelo Marcílio Dias é ", qtdTorcedFloripaMarcilioDias
+	escreva "O Número de pessoas nascidas em outras cidades e que torcem pelo Figueirense é ", qtdTorcedOutrasCidadesFigueirense
+
+fim
+        -->
+
+
+        <script>
+            var clubePref = "";
+            var vlrSalario = 0;
+            var localNascim = "";
+
+            var qtdTorcedFigueirense = 0;
+            var qtdTorcedMarcilioDias = 0;
+            var qtdTorcedOutrosClubes = 0;
+
+            var totalSalarioFiqueirense = 0;
+            var mediaSalarioFigueirense = 0;
+            var qtdTorcedFloripaMarcilioDias = 0;
+            var qtdTorcedOutrasCidadesFigueirense = 0;
+
+            var desejaContinuar = "S";
+
+            while (desejaContinuar == "S") {
+                
+                clubePref = prompt("Informe o seu Clube de Preferência ('FG - Figueirense', 'MD - Marcílio Dias' ou 'OC - Outros clubes')");
+                vlrSalario = parseFloat(prompt("Informe o seu Salário"));
+                localNascim = prompt("Informe o seu local de Nascimento ('F - Florianópolis' ou 'O - Outra cidade')");
+ 
+                if (clubePref == "FG") 
+                {
+                    qtdTorcedFigueirense = qtdTorcedFigueirense + 1
+                    totalSalarioFiqueirense = totalSalarioFiqueirense + vlrSalario
+
+                    if (localNascim == "O") 
+                    {
+                        qtdTorcedOutrasCidadesFigueirense = qtdTorcedOutrasCidadesFigueirense + 1;
+                    }
+                 
+                } else {
+                    
+                    if (clubePref == "MD") {
+                        qtdTorcedMarcilioDias = qtdTorcedMarcilioDias + 1;
+
+                        if (localNascim == "F") 
+                        {
+                            qtdTorcedFloripaMarcilioDias = qtdTorcedFloripaMarcilioDias + 1;
+                        }
+                    
+                    } else {
+                        qtdTorcedOutrosClubes = qtdTorcedOutrosClubes + 1;
+                    }
+                }
+
+                desejaContinuar = prompt("Deseja continuar a pesquisa ('S - Sim' ou 'N - Não'?)");
+
+            }
+
+            mediaSalarioFigueirense = totalSalarioFiqueirense / qtdTorcedFigueirense;
+
+            document.write("<p>O Número de torcedores do Figueirense é " + qtdTorcedFigueirense+ "</p>");
+            document.write("<p>O Número de torcedores do Marcílio Dias é " + qtdTorcedMarcilioDias+ "</p>");
+            document.write("<p>O Número de torcedores de Outros clubes é " + qtdTorcedOutrosClubes+ "</p>");
+            
+            document.write("<p>A média salarial da torcida do Figueirense é " + mediaSalarioFigueirense.toFixed(2) + "</p>");
+/*
+            document.write("<p>A média salarial da torcida do Figueirense é " + 
+                            mediaSalarioFigueirense.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }) + "</p>");
+*/            
+            
+            document.write("<p>O Número de pessoas nascidas em Florianópolis e que torcem pelo Marcílio Dias é " +
+                         qtdTorcedFloripaMarcilioDias+ "</p>");
+            document.write("<p>O Número de pessoas nascidas em outras cidades e que torcem pelo Figueirense é " +
+                        qtdTorcedOutrasCidadesFigueirense+ "</p>");
+
+
+            console.log("O Número de torcedores do Figueirense é " + qtdTorcedFigueirense);
+            console.log("O Número de torcedores do Marcílio Dias é " + qtdTorcedMarcilioDias);
+            console.log("O Número de torcedores de Outros clubes é " + qtdTorcedOutrosClubes);
+            
+            console.log("A média salarial da torcida do Figueirense é " + mediaSalarioFigueirense);
+            
+            console.log("O Número de pessoas nascidas em Florianópolis e que torcem pelo Marcílio Dias é " +
+                         qtdTorcedFloripaMarcilioDias);
+            console.log("O Número de pessoas nascidas em outras cidades e que torcem pelo Figueirense é " +
+                        qtdTorcedOutrasCidadesFigueirense);
+
+        </script>
+    </body>
+
+
+</html>

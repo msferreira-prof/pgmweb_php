@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Exerc 06 - Seleção</title>
+    </head>
+    <body>
+        <script>
+            /* declaracao de variaveis */
+            let valorCompra = 0;
+            let desconto    = 0;
+            let valorFinal  = 0; 
+
+            /* entrada */
+            valorCompra = prompt("Informe o valor da Compra");
+            valorCompra = parseFloat(valorCompra);
+
+            /* processamento */
+            if (valorCompra >= 5000) {
+                desconto = 0.2;
+            } else {
+                desconto = 0.15;
+            }
+
+            valorFinal = valorCompra - (valorCompra * desconto);
+
+            /* saida */
+            /* numero formatado para 2 casas decimais */
+            document.write("<p>Valor final da Compra = " + valorFinal.toFixed(2) + "</p>");
+            document.write("<p>Valor final da Compra (em Reais) = " + 
+                            valorFinal.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }) +
+                            "</p>");
+
+
+        </script>
+    </body>
+
+
+</html>

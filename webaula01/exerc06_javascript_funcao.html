@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--
+    Neste exercício, o código Javascript é utilizado para validar o envio do
+    formulário para o servidor.
+    A função atribuída ao evento "onclick" do botão Enviar (type="submit") é 
+    executada e retorna um valor lógico (V ou F), o qual permitirá ou não, a 
+    continuidade do processo de envio ("sumbit") do formulário para ser processado
+    pelo pgm PHP no servidor.
+    Se a função retornar "Falso", uma mensagem ("alert()") é apresentado e o navegador
+    não continua o envio, caso contrário, ele envia o formulário.
+-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Exerc 06 - Seleção</title>
+    </head>
+    <body>
+        <main>
+            <div>
+                <div>
+                    <h2>Exercício 06 - Seleção</h2>
+                </div>
+            </div>
+    
+            <!-- formulario HTML -->
+            <form name="exerc06" action="exerc06.php" method="post">
+                <!-- 
+                    Este input com type="hidden" não é renderizado pelo browser.
+                    O Javascript consegue acessá-lo normalmente e se "comporta" 
+                    como um input type="text", onde é possível ler/preencher sua
+                    propriedade "value"
+                -->
+                <input type="hidden" id="idValorFinal" name="valorFinal">
+
+                <div>
+                    <label for="idValorCompra">Valor da Compra</label>
+                    <div>
+                        <input type="text" id="idValorCompra" name="valorCompra" placeholder="Informe o valor da Compra" required>  
+                    </div>
+                </div>
+    
+                <div>
+                    <input type="reset" value="Limpar">
+                    <input type="submit" value="Enviar" id="btnEnviar">
+                </div>
+            </form>
+    
+        </main>
+
+        <script>
+
+            /* 
+              recuperar o botao "submit" e atribui uma função
+              Javascript ao evento "onclick" do mesmo
+            */
+            let btnEnviar = document.getElementById("btnEnviar");
+            btnEnviar.onclick= calcularDesconto;
+            
+            /* 
+                função para calcular o desconto e validá-lo conforme uma 
+                determinada regra.
+            */
+            function calcularDesconto() {
+                /* declaracao de variaveis */
+                let valorCompra = 0;
+                let desconto    = 0;
+                let valorFinal  = 0; 
+
+                /* entrada */
+                valorCompra = document.getElementById("idValorCompra").value;
+                valorCompra = parseFloat(valorCompra);
+
+                /* processamento */
+                /* utilização de uma função para definir o desconto a ser aplicado */
+                desconto = recuperarDesconto(valorCompra);
+
+                valorFinal = valorCompra - (valorCompra * desconto);
+
+                /* saida */
+                // document.writeln("<p>Valor final da Compra = " + valorFinal + "</p>");
+                document.getElementById("idValorFinal").value = valorCompra;
+
+                /* 
+                    regra de negócio para validação: 
+                    se o valorFinal for maior que 2000, a entrada será submetida 
+                    para processamento no lado servidor da aplicação pelo pgm 
+                    "exerc06.php", caso contrário uma mensagem será emitida pelo
+                    browser e o envio não será realizado
+                */
+                if (valorFinal > 2000) {
+                    return true;
+                } else {
+                    alert("Valor Final menor que 2000: " + valorFinal);
+                    return false;
+                }
+            }
+
+            /* 
+                função para definir o desconto a ser aplicado
+                seu retorno correponsde ao percentual do desconto
+            */
+            function recuperarDesconto(valorCompra) {
+                if (valorCompra >= 5000) {
+                    desconto = 0.2;
+                } else {
+                    desconto = 0.15;
+                }
+
+                return desconto;
+            }
+
+
+        </script>
+    </body>
+
+
+</html>
