@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste de Eventos</title>
+
+</head>
+
+<body>
+  <h2>Exemplos através de Event Listeners</h2>
+  
+  <div>
+    <p></p>
+  </div>
+
+  <button id="botao">Clique aqui</button>
+  <button id="btnLimpar">Limpe aqui</button>
+
+  <script>
+    /* recupera o elemento pelo Id */
+    var btn = document.getElementById('botao');
+    var btnLimpar = document.getElementById('btnLimpar');
+
+    /* atributo onclick do botao */
+    function preencherParagrafo() {
+      var paragrafo = document.querySelector('p');
+      paragrafo.innerHTML = 'Este parágrafo acabou de ser inserido no corpo deste documento.';
+    }
+
+    function limparParagrafo() {
+      var paragrafo = document.querySelector('p');
+      paragrafo.innerHTML = '';
+    }
+
+    /* configura os eventos 'click' para os botoes */
+    btn.addEventListener('click', preencherParagrafo);
+    btnLimpar.addEventListener('click', limparParagrafo);
+  </script>
+
+</body>
+
+</html>

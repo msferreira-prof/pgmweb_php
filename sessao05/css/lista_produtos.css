@@ -1,0 +1,27 @@
+.lista-produtos {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+th {
+    text-align: center;
+    font-size: 24px;
+    color: #008080;
+    background-color: rgb(249, 255, 206);
+}
+
+th, tr {
+    border-bottom: 1px solid rgb(214, 193,226);
+    padding: 12px 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+td:first-child {
+    text-align: left;
+}
+
+tr:hover {
+    background-color: #ddd;
+}

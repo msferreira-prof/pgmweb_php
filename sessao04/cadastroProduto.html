@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro de Produtos</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link href="img/logo_lojash_125x118.png" rel="shortcut icon">
+
+    <link href="css/estilo_basico.css" rel="stylesheet">
+    <link href="css/cadastro.css" rel="stylesheet">
+</head>
+
+<body>
+    <header id="cabecalho">
+        <div class="logo-menu">
+            <h1>
+                <img src="img/logo_lojash_125x118.png" alt="Logo Lojas H">
+            </h1>
+            <nav id="hmenu">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="cadastroProduto.html">Produto</a></li>
+                    <li><a href="listaProdutos.html">Estoque</a></li>
+                    <li><a href="comochegar.html">Cliente</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="conteudo largura-padrao">
+
+        <h2>Cadastro de Produtos</h2>
+
+        <div class="divform">
+
+            <form name="cadastroProdutos" action="#" method="post">
+
+                <fieldset>
+                    <!-- <legend>Cadastro de Produto</legend> -->
+                    <div class="label">
+                        <label for="id">Id:</label>
+                    </div>
+                    <input type="text" id="id" min="1" name="idProduto" pattern="[0-9]{5}" placeholder="Informe o código com até 5 números" >
+
+                    <div class="label">
+                        <label for="produto">Produto:</label>
+                    </div>
+                    <input type="text" id="produto" name="nomeProduto" maxlength="50" placeholder="Informe o nome do produto">
+
+                    <div class="label">
+                        <label for="fabricante">Fabricante:</label>
+                    </div>
+                    <select id="fabricante" name="codigoFabricante">
+                        <option value="00">Selecione</option>
+                        <option value="01">Naike</option>
+                        <option value="02">Adidais</option>
+                        <option value="03">Pulma</option>
+                        <option value="04">Reboco</option>
+                    </select>
+
+                    <div class="label calendario">
+                        <label for="dtFabricao">Data de Fabricação:</label>
+                        <input type="date" id="dtFabricacao" name="dataFabricacao" placeholder="dd-mm-yyyy" min="1997-01-01" max="2030-12-31">
+                    </div>
+
+                    <div class="label">
+                        <label for="precoCompra">Preço de Compra:</label>
+                    </div>
+                    <input type="text" id="precoCompra" name="vlrPrecoCompra" placeholder="Informe o preço em Reais">
+
+                    <div class="label">
+                        <label for="precoVenda">Preço de Venda:</label>
+                    </div>
+                    <input type="text" id="precoVenda" name="vlrPrecoVenda" placeholder="Informe o preço em Reais">
+
+                    <div class="label">
+                        <label for="cor">Cor:</label>
+                    </div>
+                    <input list="cores" id="cor" name="codigoCor">
+                    <datalist id="cores">
+                        <option value="Amarelo"></option>
+                        <option value="Azul"></option>
+                        <option value="Vermelho"></option>
+                        <option value="Preto"></option>
+                        <option value="Marrom"></option>
+                        <option value="Branco"></option>
+                    </datalist>
+
+                    <div class="label radio">
+                        <label>Tamanho:</label>
+                        <input type="radio" value="P" id="tamanhoP" name="tamanho"><label for="tamanhoP" class="label-radio">Pequeno</label>
+                        <input type="radio" value="M" id="tamanhoM" name="tamanho"><label for="tamanhoM" class="label-radio">Médio</label>
+                        <input type="radio" value="G" id="tamanhoG" name="tamanho"><label for="tamanhoG" class="label-radio">Grande</label>
+                    </div>
+
+                    <div class="label">
+                        <label for="tipo">Tipo:</label>
+                    </div>
+                    <select id="tipo" name="tipoTenis">
+                        <option value="0">Selecione</option>
+                        <option value="1">Cano curto</option>
+                        <option value="2">Cano longo</option>
+                        <option value="3">Sola de borracha</option>
+                        <option value="4">Couro</option>
+                    </select>
+
+                    <div class="label radio">
+                        <label>Sexo:</label>
+                        <input type="radio" value="F" id="sexoF" name="sexo"><label for="sexoF" class="label-radio">Feminino</label>
+                        <input type="radio" value="M" id="sexoM" name="sexo"><label for="sexoM" class="label-radio">Masculino</label>
+                        <input type="radio" value="O" id="sexoO" name="sexo"><label for="sexoO" class="label-radio">Outros</label>
+                    </div>
+
+                    <div class="label checkbox">
+                        <label class="label-checkbox">É um fornecedor especial</label>
+                        <input type="checkbox" id="Fornecedor especial" name="fornecedorEspecial">
+                        
+                    </div>
+
+                    <div class="label">
+                        <label for="notas">Notas sobre o Produto:</label>
+                    </div>
+                    <textarea placeholder="Notas sobre o Produto" id="notas" rows="10" cols="30">
+                    </textarea>
+
+                    <div class="label">
+                        <label for="idade">Informe a idade</label>
+                        <input type="number" id="idade" name="idadeProduto"  min="18" max="130">
+                    </div>
+
+
+                    <div id="botoes">
+                        <input type="reset" value="Limpar">
+                        <input type="submit" value="Gravar">
+                    </div>
+
+                </fieldset>
+
+            </form>
+
+        </div>
+
+    </main>
+
+    <footer id="rodape">
+        <div>
+            <h3>
+                <img src="img/logo_lojash_80x25.png" alt="Logo Lojas H">
+            </h3>
+            <p>Rua Jose Vianna 235, 2o. andar - Baraúna - RN</p>
+            <p><span class="material-icons">
+                    support_agent
+                </span><span class="telefone"> (38) 9999-9999</span></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

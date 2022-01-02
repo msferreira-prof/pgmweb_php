@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Desconto em Produto</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+    <script type="text/javascript">
+        
+        /* declaracao de variavies */
+        var valorProduto;
+        var novoValorProduto;
+        var valorDesconto;
+
+        /* entrada de dados */
+        valorProduto = prompt("Informe o valor do Produto");
+
+        /* processamento */
+        valorDesconto = valorProduto * 9 / 100;
+        novoValorProduto = valorProduto - valorDesconto;
+
+        /* saida de dados */
+        document.writeln("<div style='margin: 10px; border: 1px solid black;'>");
+        
+        document.writeln(
+            "<p style='text-align: center; font-size: 20px; color: blue;'>O valor do produto após um desconto de 9% será igual a R$ " + 
+                  novoValorProduto + 
+            "</p>"
+        );
+
+        document.writeln("</div>");
+
+    </script>
+
+</body>
+
+</html>

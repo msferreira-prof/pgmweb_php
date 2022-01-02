@@ -1,0 +1,81 @@
+body {
+    background-color: rgb(224, 223, 224);
+    margin: 0;
+}
+
+.cabecalho {
+    background-color: rgb(37, 36, 117);
+}
+
+.cabecalho h1 {
+    color: #ffffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* define uma borda inferior para o elemento */  
+    border-bottom-width: 4px;       /* 04 pixels de largura */
+    border-bottom-color:  #fff;   /* cor de fundo */
+    border-bottom-style: solid; 
+    text-align: center;
+    margin-bottom: 0;
+}
+
+/* define um conjunto de regras para a classe 'hmenu' */
+/* a classe 'hmenu' eh utilizada pelo elemento 'nav' */
+.menu-sessao01 {
+    /* define uma cor de fundo para o elemento e todos os elementos dentro do elemento 'nav' */
+
+    /* define a fonte para todos os elementos dentro do elemento 'nav' */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+/* 
+    define um conjunto de regras para os elementos 'ul' inseridos 
+    em um elemento que utilize a classe 'hmenu'
+*/
+.menu-sessao01 ul {             
+    list-style: none;   /* remove os bullets do item da lista */
+    margin: 0;          /* remove as margens da lista de itens */
+    padding: 0;         /* zera o espaco entre o conteudo dos elementos */
+}
+
+/* 
+    define um conjunto de regras para os elementos 'li' 
+    inseridos em um elemento 'ul' 
+    que utilize a classe 'hmenu' 
+*/
+.menu-sessao01 ul li {
+    display: inline;    /* define que os itens da lista nao ocupam a linha toda, apresentando-se lado a lado */
+}
+
+/* 
+    define um conjunto de regras para os elementos 'a' 
+    inseridos em um elemento 'li' 
+    inserido em um elemento 'ul' 
+    que utilize a classe 'hmenu' 
+*/
+.menu-sessao01 ul li a {
+    color: #ffffff; 
+    text-transform: uppercase;  /* define que o texto do elemento ancora (link) sera apresentado em letras maiusculas */
+    text-decoration: none;      /* remove a linha que sublinha o texto do elemendo ancora (link) */
+    padding: 20px;              /* define 20px como espaco entre o conteudo (texto) e a borda da ancora (link) */
+    display: inline-block;      /* define que o comportamento do elemento ancora (link) */
+}
+
+/* 
+    define uma pseudo-classe com um 
+    conjunto de regras invocado
+    quando o mouse eh passado sobre 
+    os elementos 'a' 
+    inseridos em um elemento 'li' 
+    inserido em um elemento 'ul' 
+    que utilize a classe 'hmenu' 
+    Em pseudo-chaves eh utilizado ':' e
+    a palavra-chave correpondente
+    Ex.: seletor:palavra-chave
+         a:hover
+
+*/
+.menu-sessao01 ul li a:hover {
+    background-color: rgb(255, 255, 255);  /* modifica a cor de fundo do elemento */
+    color: rgb(0, 0, 0);            /* modifica a cor do texto do elemento */
+}

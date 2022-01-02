@@ -1,0 +1,41 @@
+.my-font-family {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.my-h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #470864;
+    border-bottom: 1px solid #470864;
+}
+
+.meu-h5-font-size {
+    font-size: 1.2em;
+}
+
+.my-table-hover tbody > tr:hover {
+    background-color: #a1cc9c4f;
+}
+
+.my-table-image td {
+    vertical-align: middle;
+}
+
+.my-table-td-first-child td:first-child {
+    text-align: left;
+}
+
+.my-table-th th {
+    font-size: 24px;
+    color: #008080;
+    background-color: rgb(249, 255, 206);
+}
+
+.my-table-border-bottom tr {
+    border-bottom: 1px solid rgb(214, 193,226);
+}
+
+/* define um conjunto de regras para subclasses */
+.fonte-bold {
+    font-weight: bold;
+}

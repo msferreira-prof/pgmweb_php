@@ -1,0 +1,77 @@
+<!DOCType HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Exercícios Javascript</title>
+    <style>
+        .entrada,
+        .resultado,
+        .botoes {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Exemplo Repetição / Algoritmo - Javascript</h2>
+
+    <!--
+        // recebo as notas por materia, calculo a media e apresento a media
+
+        // recebo as notas por materia
+        // removo as menores notas
+        // calcular media
+        // apresenta as medias
+
+
+        para cada materia informada faça
+            informe a 1a nota
+            informe a 2a nota
+            calcule a media
+            apresente a media
+        fim-para-cada
+
+        verificar a maior media
+        apresentar a maior media
+
+        
+        ***************
+        
+        
+        para cada materia informada faca
+            informe a 1a nota
+            informe a 2a nota
+        fim-para 
+
+        
+        para cada materia e notas informadas faca
+            calcule a media
+            apresente a media
+        fim-para
+
+    -->
+
+
+    <!-- inicio do codigo Javascript -->
+    <script type="text/javascript">
+        var materia, nota1, nota2, media;
+
+        for (var i = 0; i < 3; i++) {
+
+            materia = prompt("Informe a matéria");
+            nota1 = prompt("Informe a 1a. nota");
+            nota2 = prompt("Informe a 2a. nota");
+
+            media = (parseFloat(nota1) + parseFloat(nota2)) / 2;
+
+            alert("A média de " + materia + " é " + media);
+
+        }
+
+    </script>
+    <!-- fim do codigo Javascript -->
+
+</body>
+
+</html>

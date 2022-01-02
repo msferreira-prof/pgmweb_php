@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Bootstrap 4 Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="img/logo-rioantigo-ico.ico" rel="shortcut icon">
+
+  <!-- Bootstrap -->
+  <!-- insira este conteudo aqui que representa o CSS do Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+  <link href="css/meu-estilo.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- seu codigo comeca aqui -->
+
+  <header class="container px-0">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-0">
+
+      <!-- logo -->
+      <div>
+        <a class="navbar-brand mx-auto">
+          <img src="img/logo-rioantigo-200x75.png">
+        </a>
+      </div>
+
+       <!-- 
+          button - elemento responsavel pela a acao de esconder/mostrar o menu quando breakpoint menor que lg
+          href - seletor referente ao id do elemento controlado
+          aria-expand - define se elemento controlado está expanded ou collapsed (visivel/invisivel)
+          aria-controls - define o elemento elemento cuja presenca ou conteudo é controlado pelo elemento corrente (o próprio "button")
+          aria-label - define uma etiqueta para o elemento
+          data-toggle - relaciona um elemento com outro através de seu tipo (classe "collapse")
+          data-target - define o elemento "alvo" de uma ação, correspondendo a um seletor CSS do elemento que participa do evento do elemento controlador
+        -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynavbar"
+        aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Navegação Alternativa">
+        Menu <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- menu -->
+      <div class="collapse navbar-collapse justify-content-end" id="mynavbar">
+        <div class="navbar-nav">
+          <a href="index.html" class="nav-link">Início</a>
+          <a href="rioantigo_cards.html" class="nav-link">Imagens</a>
+          <a href="rioantigo_estorias.html" class="nav-link">Estórias</a>
+          <a href="rioantigo_lista.html" class="nav-link">Locais</a>
+          <a href="rioantigo_contato.html" class="nav-link">Contato</a>
+          <a href="sobre.html" class="nav-link">Sobre</a>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+  <main class="container m-2 w-75 mx-auto my-font-family">
+
+    <div class="row">
+      <div class="col text-center m-0">
+        <h2 class="mt-2 mb-0 my-h2">
+          Estórias do Rio Antigo <span class="badge badge-pill badge-info my-badge-vertical-align-super">Novo</span>
+        </h2>
+      </div>
+    </div>
+
+    <section class="row mx-auto m-3">
+      <!-- cabecalho como responsavel por esconder/mostrar o card -->
+      <h4>
+        <!-- 
+          ancora - elemento responsavel pela a acao de esconder/mostrar o card
+          href - seletor referente ao id do elemento controlado
+          aria-expand - define se elemento controlado está expanded ou collapsed (visivel/invisivel)
+          aria-controls - define o elemento cuja presenca ou conteudo é controlado pelo elemento corrente (o próprio "ancora")
+          data-toggle - relaciona um elemento com outro através de seu tipo (classe "collapse")
+        -->
+        <a class="my-color-purple" data-toggle="collapse" href="#precabralino" role="button" aria-expanded="false"
+          aria-controls="precabralino">
+          Período Pré-Cabralino
+        </a>
+      </h4>
+
+      <!-- 
+        collapse - define o tipo de elemento (classe "collapse")
+                   sera controlado pela ancora acima, a partir do seletor do elemento (ver data-toggle e href) 
+      -->
+      <div class="collapse text-justify" id="precabralino">
+        <div class="card mb-2">
+          <div class="card-body">
+            <p class="card-text">
+              Por volta do ano 1000, a maior parte do atual litoral brasileiro, incluindo o território da atual
+              cidade do Rio de Janeiro, foi invadida por povos tupis procedentes da Amazônia.
+            </p>
+            <p class="card-text text-monospace">
+              <span class="my-color-purple">Curiosidades:</span><span class="text-muted font-italic"> Os tapuias eram os
+                habitantes do litoral da cidade do Rio de Janeiro.</span></p>
+            <p class="card-text">No início do século XVI, o território da cidade do Rio de Janeiro era ocupado na sua
+              maior parte
+              pela tribo tupi dos tupinambás, também chamados tamoios. Uma das inúmeras aldeias tupinambás no território
+              da
+              atual cidade do Rio de Janeiro era a aldeia Carioca, cujo nome viria a se tornar, posteriormente, o
+              gentílico
+              da
+              cidade.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="row mx-auto mb-3">
+      <h4>
+        <a class="my-color-purple" data-toggle="collapse" href="#precolonial" role="button" aria-expanded="false"
+          aria-controls="precolonial">
+          Período Colonial
+        </a>
+      </h4>
+
+      <div class="collapse text-justify" id="precolonial">
+        <div class="card mb-2">
+          <div class="card-body">
+            <p class="card-text">
+              A Baía de Guanabara, que banha a cidade do <strong>Rio de Janeiro</strong>, foi descoberta pelos
+              portugueses
+              em 1º de janeiro de
+              1502, durante a viagem do florentino Américo Vespúcio de reconhecimento da costa da América
+              Portuguesa.
+            </p>
+            <p class="card-text text-monospace">
+              <span class="my-color-purple">Curiosidades:</span><span class="text-muted font-italic"> França
+                Antártica, tentativa de colonização francesa no interior da Baía de
+                Guanabara.</span></p>
+            <p class="card-text">
+              A cidade de "São Sebastião do Rio de Janeiro" foi fundado por Estácio de Sá em 1° de março de
+              1565,
+              quando desembarcou num istmo entre o Morro Cara de Cão e o Morro do Pão de Açúcar, erguendo uma
+              paliçada
+              defensiva.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="row mx-auto mb-3">
+      <h4>
+        <a class="my-color-purple" data-toggle="collapse" href="#preimperial" role="button" aria-expanded="false"
+          aria-controls="preimperial">
+          Período Imperial
+        </a>
+      </h4>
+
+      <div class="collapse text-justify" id="preimperial">
+        <div class="card mb-2">
+          <div class="card-body">
+            <p class="card-text">
+              Após a Independência do Brasil em 1822, a cidade continuou como capital do país, enquanto a
+              província do Rio de Janeiro enriqueceu com a agricultura canavieira da região de Campos e,
+              principalmente, com o novo cultivo do café no Vale do Paraíba.
+            </p>
+            <p class="card-text text-monospace">
+              <span class="my-color-purple">Curiosidades:</span><span class="text-muted font-italic"> O Corpo de
+                Bombeiros foi criado em 1855.</span></p>
+            <p class="card-text">
+              De modo a separar a província da capital do Império, a cidade foi compreendida, no ano de 1834, no
+              Município Neutro, passando a Província do Rio de Janeiro a ter Niterói como capital.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="row mx-auto mb-3">
+      <h4>
+        <a class="my-color-purple" data-toggle="collapse" href="#prerepublicano" role="button" aria-expanded="false"
+          aria-controls="prerepublicano">
+          Período republicano
+        </a>
+      </h4>
+
+      <div class="collapse text-justify" id="prerepublicano">
+        <div class="card mb-2">
+          <div class="card-body">
+            <p class="card-text">
+              Em 27 de outubro de 1912, foi inaugurado o primeiro trecho do caminho aéreo do Pão de Açúcar, entre
+              a Praia Vermelha e o Morro da Urca. O chamado "bondinho do Pão de Açúcar" se tornaria um dos grandes
+              símbolos da cidade.
+            </p>
+            <p class="card-text text-monospace">
+              <span class="my-color-purple">Curiosidades:</span><span class="text-muted font-italic"> A estátua do
+                Cristo Redentor foi inaugurada em 12 de agosto de 1931.</span></p>
+            <p class="card-text">
+              Em 1960, após a transferência da capital federal para Brasília, o antigo Distrito Federal, onde se situava
+              a cidade do Rio de Janeiro, se tornou o estado da Guanabara.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="container text-center">
+    <!-- linha (grid system), border-top, cor aplicada na borda, background-color (cor de fundo) -->
+    <div class="row border-top border-primary bg-light">
+      <div class="col-2"></div>
+      <div class="col-8 text-center">
+        <h5>Fontes</h5>
+        <p>Esta página foi montada a partir do trabalho de <a
+            href="https://theurbanearth.wordpress.com/2009/02/24/rio-de-janeiro-anos-40/" target="_blank"><span
+              class="fonte-bold">Cecilia Lucchese</span></a>, disponível através do blog
+          <a href="https://theurbanearth.wordpress.com/" target="_blank"><span class="fonte-bold">THE URBAN
+              EARTH -
+              Reflexões para um mundo urbanizado</span></a> de sua autoria.
+        </p>
+      </div>
+      <div class="col-2"></div>
+    </div>
+    <div class="row bg-light my-0">
+      <div class="col font text-primary copyright">
+        <p>&copy; Copyright Pmg Web</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- seu codigo termina aqui -->
+
+  <!-- Bootstrap -->
+  <!-- insira este conteudo do Bootstrap aqui, antes do fechamento do "body" -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+  </script>
+
+  <!-- os scripts abaixo tambem podem ser utilizados ao inves dos dois acima -->
+  <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+leia um valor
+se o valor for igual a zero   entao escreva zero
+se o valor for maior que zero entao escreva positivo
+se o valor for menor que zero entao escreva negativo
+
+algoritmo PositivoNegativoZero
+variaveis
+    valor: inteiro
+    
+inicio
+    ler valor
+    
+    se valor = 0 
+        entao   
+            escreva "Zero"
+    fim-se
+    
+    se valor > 0 
+        entao   
+            escreva "Positivo"
+
+    fim-se
+
+    se valor < 0 
+        entao   
+            escreva "Negativo"
+    fim-se
+fim    
+
+
+algoritmo PositivoNegativoZero_v2
+variaveis
+    valor: inteiro
+    resultado: texto
+    
+inicio
+    ler valor
+    
+    se valor = 0 
+        entao   
+            resultado <- "Zero"
+    fim-se
+    
+    se valor > 0 
+        entao   
+            resultado <- "Positivo"
+
+    fim-se
+
+    se valor < 0 
+        entao   
+            resultado <- "Negativo"
+    fim-se
+    
+    escreva resultado
+fim    
+
+
+algoritmo PositivoNegativoZero_v3
+variaveis
+    valor: inteiro
+    resultado: logico
+    
+inicio
+    ler valor
+    
+    resultado <- (valor = 0)
+    se resultado = verdadeiro
+        entao   
+            escreva "Zero"
+    fim-se
+
+    resultado <- (valor > 0)
+    se resultado = verdadeiro
+        entao   
+            escreva "Positivo"
+
+    fim-se
+
+    resultado <- (valor > 0)
+    se resultado = verdadeiro
+        entao   
+            escreva "Negativo"
+    fim-se
+
+fim  

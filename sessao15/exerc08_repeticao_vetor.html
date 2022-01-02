@@ -1,0 +1,132 @@
+<!DOCType HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Exercícios Javascript</title>
+    <style>
+        .entrada, .resultado, .botoes {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Exercicio Javascript 8 - Repetição e Vetor</h2>
+    
+    <!-- inicio do codigo Javascript -->
+    <script type="text/javascript">
+        var altura, idade, somaIdades, somaAlturas, qtdAlunosIdade, qtdAlunosAltura;
+        var mediaIdade, mediaAltura;
+        var idades, alturas;
+        
+        /* 
+            vetor para armazenar as alturas e idades informadas 
+            para serem apresentadas ao final
+        */
+        idades  = [];
+        alturas = [];
+
+        somaIdades      = 0;
+        qtdAlunosIdade  = 0;
+
+        somaAlturas     = 0;
+        qtdAlunosAltura = 0;
+    
+        /* entrada de dados */
+        for( var contarAluno = 0; contarAluno < 3; contarAluno++ ) {
+            
+            altura = prompt("Informe a altura do aluno");
+            idade  = prompt("Informe a idade do aluno");
+
+            altura = parseFloat(altura);
+            idade  = parseInt(idade);
+
+            alturas.push(altura);
+            idades.push(idade);
+
+            /* teste para separar quem atende aos requisitos do problema */
+            if ( altura < 1.7 ) {
+                somaIdades     = somaIdades + idade;
+                qtdAlunosIdade = qtdAlunosIdade + 1;
+            }
+
+            if ( idade > 20 ) {
+                somaAlturas     = somaAlturas + altura;
+                qtdAlunosAltura = qtdAlunosAltura + 1
+            }
+        }
+
+        /* calcular a media */
+        mediaAltura = somaAlturas / qtdAlunosAltura;
+        mediaIdade  = somaIdades  / qtdAlunosIdade;
+
+        /* verificar se nao houve divisao por zero, caso contrario a media ficara igual a 0 */
+        if ( isNan(mediaAltura) ) {
+            mediaAltura = 0;
+        }
+        if ( isNaN(mediaIdade) ) {
+            mediaIdade = 0;
+        }
+
+        /* apresentar o resultado */
+        document.writeln("<p>Altura média: " + mediaAltura + "</p>");
+        document.writeln("<p>Idade  média: " + mediaIdade  + "</p>");
+
+        /* apresentar as idades e alturas informadas e armazenadas em vetores */
+        document.writeln("<p>Alturas informadas: " + alturas.join(" / ") + "</p>");
+        document.writeln("<p>Idades  informadas: " + idades.join(" / ")  + "</p>");
+
+    </script>
+    <!-- fim do codigo Javascript -->
+
+<!--
+    algoritmo criado pelo Bruno
+        INICIO
+            ENTRADA
+
+                Loop (x5)
+
+                    Pede:
+
+                        Nome do Aluno
+
+                        Idade do Aluno
+
+                        Altura do Aluno
+
+                        [PULO PRA SAÍDA] Escreve na tela:  Nome, Idade, Alura, quebra de linha. (É opcional, só para conferência).
+
+
+                    Testa altura: Se < 1,7
+
+                        Soma idade.
+
+                        Acrescenta 1.
+
+                    Testa idade: Se > 20.
+
+                        Soma altura.
+
+                        Acrescenta 1.
+
+                Soma 1 (contador).
+                
+            PROCESSAMENTO
+
+                Fazer a média da hipótese a): Pega o somatório da idade e divide pelo acréscimo (do testa altura).
+
+                Fazer a média da hipótese b): Pega o somatório da altura e dividae pelo acréscimo (do testa idade).
+
+            SAÍDA
+
+                Escreve na tela a média da hipótese a).
+
+                Escreve na tela a média da hipótese b).
+
+        FIM
+-->
+
+</body>
+
+</html>

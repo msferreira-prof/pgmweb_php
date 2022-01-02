@@ -1,0 +1,20 @@
+https://www.000webhost.com
+
+site : testegithub
+senha:testegitHub10
+     
+HOME/INICIO/site
+https://testegithub.000webhostapp.com/sessao01/documento.html
+https://testegithub.000webhostapp.com/public_html/sessao01/documento.html
+
+     
+BD 
+schema: lista_chamadas_v2
+usuario: admin
+senha  : adminRoot@2021 
+
+id17680509_lista_chamadas_v2 	id17680509_admin  
+
+testegithub
+V_4e~CT@_9rznRoa
+  

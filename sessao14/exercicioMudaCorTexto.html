@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Modifica o Estilo do Elemento</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <div style="border: 1px solid black; margin: 10px;">
+        <p id="exemplo" style="text-align: center;">Elemento originalmente escrito com as cores definidas pelo Navegador
+        </p>
+
+        <div style="text-align: center; margin: 5px auto;">
+
+            <!-- 
+                evento onclick do elemento button chama a funcao Javascript 
+                para mudar a cor do texto do paragráfo com id igual a "exemplo" 
+            -->
+            <button type="button" onclick="mudaCorTexto()">Muda Cor</button>
+
+            <!-- evento onclick chama a funcao Javascritp para mudadr a cor do texto -->
+            <button type="button" onclick="voltaCorOriginal()">Cor Original</button>
+
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+        /*
+            busca o elemento pelo id e troca o valor do atributo "style" do mesmo elemento
+            definindo cor azul e fonte com 20px para o parágrafo
+        */
+        function mudaCorTexto() {
+
+            document.getElementById("exemplo").style = "text-align: center; color: blue; font-size: 20px";
+
+        }
+
+        /* remove o valor do atributo "style" do elemento com o id pesquisado */
+        function voltaCorOriginal() {
+            document.getElementById("exemplo").style = "text-align: center;";
+        }
+    </script>
+
+</body>
+
+</html>

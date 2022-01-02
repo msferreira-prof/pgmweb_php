@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: 'Open Sans', sans-serif;
+}
+
+#cabecalho {
+    background-color: #e7b299;
+    padding: 5px 0;
+}
+
+.logo-menu {
+    width: 940px;
+    margin: auto;
+    position: relative;
+}
+
+#hmenu {
+    position: absolute;
+    top: 50px;
+    right: 0;
+}
+
+#hmenu ul li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+#hmenu ul li a {
+    color: #470864;
+    text-decoration: none;
+    transition: background .3s;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 22px;
+    /* margin-right: 15px; */
+}
+
+#hmenu ul li a:hover {
+    color: rgb(224, 134, 30);
+    border-bottom: 1px solid rgb(224, 134, 30);
+}
+
+.largura-padrao {
+    width: 940px;
+}
+
+.logo-index {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.logo-index img {
+    width: 100%;
+}
+
+.conteudo {
+    /* border: #ffffff 1px solid ; */
+    padding: 20px 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.conteudo h2 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #470864;
+    border-bottom: 1px solid #470864;
+}
+
+/*
+    lista de produtos pode entrar aqui
+*/
+
+/* rodape */
+#rodape {
+    background-color: #e7b299;
+}
+
+#rodape div {
+    width: 940px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+#rodape h3 {
+    padding-top: 10px;
+    text-align: center;
+}
+
+#rodape p {
+    padding: 0;
+    text-align: center;
+    font-size: 14px;
+    color: #470864;
+    font-family: 'Roboto Condensed', sans-serif;
+    vertical-align: middle;
+}
+
+#rodape p:last-child {
+    padding-bottom: 5px;
+    
+}
+
+.telefone {
+    vertical-align: super;
+}

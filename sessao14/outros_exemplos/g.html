@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste de Eventos</title>
+
+</head>
+
+<body>
+  <h2>Exemplos através de Eventos</h2>
+  
+  <div>
+    <p></p>
+  </div>
+  
+  <button id="botao">Clique aqui</button>
+  <button id="btnLimpar">Limpe aqui</button>
+
+  <script>
+    /* recupera o elemento pelo Id */
+    var btn = document.getElementById('botao');
+    var btnLimpar = document.getElementById('btnLimpar');
+
+    /* atributo onclick do botao */
+    btn.onclick = function () {
+      var paragrafo = document.querySelector('p');
+      paragrafo.innerHTML = 'Este parágrafo acabou de ser inserido no corpo deste documento.';
+    }
+
+    function limparParagrafo() {
+      var paragrafo = document.querySelector('p');
+      paragrafo.innerHTML = '';
+    }
+
+    btnLimpar.onclick = limparParagrafo;
+  </script>
+
+</body>
+
+</html>

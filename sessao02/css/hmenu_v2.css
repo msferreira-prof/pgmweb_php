@@ -1,0 +1,46 @@
+body {
+    box-sizing: border-box;    
+}
+
+header {
+    margin: bo
+    background-color: rgb(213, 216, 179);
+}
+
+nav li {
+    display: inline;
+    margin-left: 10px;
+}
+
+nav li a {
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+article {
+    width: 940px;
+    margin: 0 auto;
+}
+
+section {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1%;
+    height: 800px;
+    border: 1px solid black;
+    vertical-align: top;
+}
+
+section h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+section p {
+    text-align: justify;
+    padding: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}

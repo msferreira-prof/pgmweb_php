@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Aumento de Salário</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+    <form method="#" action="#">
+        <div>
+            <label for="idSalario">Informe o salário</label>
+            <input type="text" name="salario" id="idSalario">
+        </div>
+        <div>
+            <input type="reset" value="Limpar">
+            <input type="button" value="Calcular" id="btnCalcular">
+        </div>
+    </form>
+
+    <script type="text/javascript">
+
+        /* atribuindo a funcao Calcular ao evento do botao Calcular */
+        var btnCalcular = document.getElementById("btnCalcular");
+        btnCalcular.addEventListener("click", calcular);
+
+        function calcular() {
+            let salario, novoSalario;
+
+            salario  = 0;
+            novoSalario = 0;
+            resultado = "";
+
+            /* entrada */
+            salario = document.getElementById("idSalario").value;
+
+            /* processamento */
+            if (isNaN(salario)) {
+                resultado = "Os valores informados não permitem executar o cálculo." +
+                            " Salário: " + salario;
+            } else {
+                novoSalario = salario * 1.37;
+                resultado = "O novo salário será de R$ " + novoSalario;
+            }
+
+            /* saida */
+            document.write( resultado );
+        }
+    </script>
+
+</body>
+
+</html>

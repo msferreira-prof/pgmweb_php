@@ -1,0 +1,111 @@
+/* importacao de fontes Google
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+*/
+
+/* variaveis CSS */
+:root {
+    --main-color:  rgb(10, 18, 124);
+    --second-color:  rgb(255, 255, 255);
+}
+
+/* menu vertical */
+
+* {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    width: 940px;
+}
+
+header {
+    margin-top: 10px;
+    width: 20%;
+}
+
+#vmenu {
+    background-color: aqua;
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 20%;
+    float: left;
+}
+
+#vmenu ul {
+    list-style: none;
+    padding: 0;
+}
+
+#vmenu ul li { 
+    background-color: var(--main-color);
+    border-bottom: 1px solid rgb(0, 0, 255);
+}
+
+#vmenu ul li a {
+    /* background-color: rgb(0, 0, 0); */
+    background-color: rgb(201, 187, 201);
+    color:rgb(255, 255, 255);
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    transition: background .2s;
+
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#vmenu ul li a:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(10, 18, 124);
+}
+
+/* texto */
+main {
+    margin-top: 10px;
+    width: 80%;
+    float: right;
+}
+
+section, article {
+    padding-top: 0;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+section h2, article h2 {
+    color: #0000ff;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    font-size: 23px;
+}
+
+section p, article p {
+    margin: 10px 0;
+    padding: 10px 10px 5px 10px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+footer {
+    clear: both;
+}
+
+#arrow_upward {
+    color: blue;
+    float: right;
+}
+
+
+

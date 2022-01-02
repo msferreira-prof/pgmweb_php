@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Exercicio Sequencial - 19</title>
+    </head>
+    <body>
+        <form action="#" method="post">
+            <div>
+                <label for="idAltura" >Informe a altura da Pessoa</label>    
+                <input type="text" id="idAltura" name="altura">
+            </div>
+            <div>
+                <label for="iPeso" >Informe o peso da Pessoa</label>    
+                <input type="text" id="idPeso" name="peso">
+            </div>
+            <div>
+                <input type="reset" value="Limpar">
+                <input type="button" id="idCalcular" value="Calcular IMC">
+            </div>
+
+        </form>
+
+        <hr>
+
+        <p id="idResultado">
+        </p>
+
+
+        <!-- Javascript -->
+        <script>
+            function calcularIMC() {
+                let peso = 0;
+                let altura = 0;
+                let imc = 0;
+
+                /* entrada */
+                altura = document.getElementById("idAltura").value;
+                altura = parseFloat(altura);
+
+                peso = document.getElementById("idPeso").value;
+                peso = parseFloat(peso);
+
+                /* processamento */
+                imc = peso / (altura * altura);
+
+                /* mostrando o imc com 2 casas */
+                imc = imc.toPrecision(2);
+ 
+                /* saida */
+                /* <p>... innerHTML ...</p> */
+                document.getElementById("idResultado").innerHTML = "A massa corpórea da pessoa é " + imc;
+            }
+
+            /*
+             recuperei o botao CalcularIMC e atribui o processo de calcular ao botao
+             atraves do evento Click
+            */
+            var btnCalcularIMC = document.getElementById("idCalcular");
+            btnCalcularIMC.addEventListener("click", calcularIMC);
+
+        </script>
+
+
+    </body>
+</html>

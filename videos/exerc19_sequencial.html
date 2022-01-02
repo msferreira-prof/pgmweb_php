@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Exercicio Sequencial - 19</title>
+    </head>
+    <body>
+        <!--
+            algoritmo CalcularIMC
+            variaveis
+                peso: real
+                altura: real
+                imc: real
+
+            inicio
+                escreva "Informe a altura da Pessoa"
+                leia altura
+            
+                escreva "Informe o peso da Pessoa"
+                leia peso
+
+                imc <- peso / (altura * altura)
+
+                escreva "A massa corpórea da pessoa é ", imc
+            fim
+        -->
+        <script>
+            var peso;
+            var altura;
+            var imc;
+
+            peso = 0;
+            altura = 0;
+            imc = 0;
+
+            /* entrada de dados */
+            altura = prompt("Informe a altura da Pessoa");
+            peso = prompt("Informe o peso da Pessoa");
+
+            /* processamento */
+            imc = peso / (altura * altura);
+
+            /* saida de dados */
+            console.log("A massa corpórea da pessoa é " + imc);
+            alert("A massa corpórea da pessoa é " + imc);
+            document.write("<p>A massa corpórea da pessoa é " + imc + "</p>");
+
+        </script>
+
+
+    </body>
+</html>

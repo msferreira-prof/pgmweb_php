@@ -1,0 +1,103 @@
+.divform {
+    width: 680px;
+    background-color: rgb(253, 253, 253);
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.divform fieldset {
+    border: none;
+}
+
+.label {
+    font-size: 20px;
+    padding: 8px 0 6px 0;
+}
+
+.divform input[type=text] {
+    width: 100%;
+    padding: 10px 10px;
+    margin: 6px 0;
+    box-sizing: border-box;
+    border: 1px solid #470864;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+.calendario {
+    margin-top: 12px;
+}
+.calendario input[type=date] {
+    width: 40%;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    border: 1px solid #470864;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+.divform input[type=text]:focus {
+    border: 2px solid #555;
+}
+
+.divform select, .divform datalist {
+    width: 100%;
+    padding: 10px 10px;
+    border: 1px solid #470864;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #470864;
+}
+
+.divform input[list] {
+    width: 100%;
+    padding: 10px 10px;
+    border: 1px solid #470864;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #470864;
+    box-sizing: border-box;
+}
+
+.radio {
+    margin-top: 12px;
+}
+
+.radio input[type=radio] {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px; 
+    margin-left: 10px;
+}
+
+.label-radio {
+    display: inline; 
+    padding-left: 6px;
+    color:#470864; 
+}
+
+#botoes {
+    width: 250px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+#botoes input[type=reset], #botoes input[type=submit], #botoes input[type=button] {
+    background-color: #470864;
+    color: #fff;
+    padding: 8px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#botoes input[type=reset]:hover, #botoes input[type=submit]:hover {
+    background-color: #fff;
+    color: #470864;
+}

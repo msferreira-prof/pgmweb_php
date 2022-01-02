@@ -1,0 +1,160 @@
+<!DOCType HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Exercícios Javascript</title>
+    <style>
+        .entrada,
+        .resultado,
+        .botoes {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- inicio do codigo HTML -->
+    <h2>Exercicio 05 Javascript - Lista Repetição</h2>
+
+    <div id="form" class="entrada">
+        <h2>Entrada de Dados</h2>
+        <form name="exerc05">
+            <div>
+                <label for="idEntrada01">Informe o "De"</label>
+                <input type="text" id="idEntrada01" name="entrada01">
+            </div>
+            <div>
+                <label for="idEntrada02">Informe o "Até"</label>
+                <input type="text" id="idEntrada02" name="entrada02">
+            </div>
+            <div class="botoes">
+                <input type="reset" value="Limpar">
+                <input type="button" value="Executar" id="btnExecutar">
+                <input type="button" value="Validar" id="btnValidar">
+                <input type="button" value="Executar com Validacao" id="btnExecutarValido">
+            </div>
+        </form>
+        <hr />
+        <div class="resultado">
+            <h2>Saída de Dados (Resultado do Pocessamento)</h2>
+            <div>
+                <label for="idResultado01">Soma dos Positivos</label>
+                <input type="text" id="idResultado01" name="resultado01" readonly>
+            </div>
+            <div>
+                <label for="idResultado02">Resultado 02</label>
+                <textarea id="idResultado02" rows="5" cols="25" name="resultado02" readonly>
+                </textarea>
+            </div>
+        </div>
+    </div>
+    <!-- fim do codigo HTML -->
+
+    <!-- inicio do codigo Javascript -->
+    <script type="text/javascript">
+        var btnExecutar, btnValidar, btnExecutarValido;
+        
+        /* recupera os elementos HTML do tipo button */
+        btnExecutar = document.getElementById("btnExecutar");
+        btnValidar = document.getElementById("btnValidar");
+        btnExecutarValido = document.getElementById("btnExecutarValido");
+
+        /* atribui as funcoes para os respectivos eventos nos elementos "button" */
+        btnExecutar.onclick = apresentarExerc05;
+        btnExecutar.ondblclick = apresentarExerc05_While;
+        btnValidar.ondblclick = validarEntrada01;
+        btnExecutarValido.onclick = apresentarExerc05_While;
+
+        /* funcao que recupera os valores digitados no formulario e apresenta o resultado */
+        function apresentarExerc05() {
+
+            var somaPositivos, modulo, resultado, valorInicial, valorFinal;
+
+            somaPositivos = 0;
+            resultado = "";
+
+            /* recuperar os valores do formulario de entrada de dados */
+            valorInicial = document.getElementById("idEntrada01").value;
+            valorFinal   = document.getElementById("idEntrada02").value;
+
+            /* conversao do numero informado como texto para tipo primitivo inteiro */
+            valorInicial = parseInt(valorInicial);
+            valorFinal   = parseInt(valorFinal);
+
+            /* processo utilizando os numeros informados no formulario */
+            for (var contador = valorInicial; contador <= valorFinal; contador++) {
+                modulo = contador % 2;
+                if (modulo == 0) {
+                    resultado = resultado + contador + ", ";
+                    somaPositivos += contador;
+                }
+            }
+
+            /* apresentar os resultados em elementos HTML do documento */
+            document.getElementById("idResultado01").value = somaPositivos;
+            document.getElementById("idResultado02").value = resultado;
+        }
+
+        /* funcao que recupera um valores digitado no formulario e valida o valor informado */
+        function validarEntrada01() {
+            var valorInformado;
+            
+            /* recupera o valor digitado no elemento */
+            valorInformado = document.getElementById("idEntrada01").value;
+
+            if (parseInt(valorInformado) < 10) {
+                alert("Valor 'De' dever ser maior ou igual a 10");
+                validoTF = false;
+            } else {
+                validoTF = true;
+            }
+
+            return validoTF; // retorna o resultado da validacao (V ou F)
+        }
+
+        /* funcao que recupera os valores digitados no formulario, valida o valor informado e apresenta o resultado */
+        function apresentarExerc05_While() {
+
+            var somaPositivos, modulo, resultado, valorInicial, valorFinal, validacao;
+            var contador;
+
+            /* validando um valor informado atraves de um elemento HMTL */
+            validacao = validarEntrada01();
+            if (validacao == true) { // se a validacao estiver ok, entao executar o processo
+
+                somaPositivos = 0;
+                resultado = "";
+
+                /* recuperar os valores do formulario de entrada de dados */
+                valorInicial = document.getElementById("idEntrada01").value;
+                valorFinal = document.getElementById("idEntrada02").value;
+
+                /* conversao do numero informado como texto para tipo primitivo inteiro */
+                valorInicial = parseInt(valorInicial);
+                valorFinal   = parseInt(valorFinal);
+                
+                /* processa o valor */
+                contador     = valorInicial;
+                while (contador <= valorFinal) {
+                    modulo = contador % 2;
+                    if (modulo == 0) {
+                        resultado = resultado + contador + ", ";
+                        somaPositivos += contador;
+                    }
+
+                    contador++;
+                }
+
+                /* apresenta o resultado */
+                document.getElementById("idResultado01").value = somaPositivos;
+                document.getElementById("idResultado02").value = resultado;
+
+            }
+        }
+    </script>
+    <!-- fim do codigo Javascript -->
+
+</body>
+
+</html>

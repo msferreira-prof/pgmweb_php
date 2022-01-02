@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Teste de Eventos</title>
+
+</head>
+
+<body>
+    <h2>Exemplos através de Eventos</h2>
+
+    <script>
+
+        var x = prompt('Informe o valor de X');
+        var y = prompt('Informe o valor de Y');
+        var z = prompt('Informe o valor de Z');
+
+        /* teste */    
+        if ((x > y) || (z <= 30)) {
+            x = x * 2;
+        } else {
+            x = x / 2;
+            z = z / 5;
+        }
+
+        document.write('<p>O resultado de X : ' + x + '</p>');
+        document.write('<p>O resultado de Z : ' + z + '</p>');
+        document.writeln('<p>');
+        document.writeln('O resultado de X : ' + x);
+        document.writeln('O resultado de Z : ' + z);
+        document.writeln('</p>');
+
+    </script>
+
+</body>
+
+</html>

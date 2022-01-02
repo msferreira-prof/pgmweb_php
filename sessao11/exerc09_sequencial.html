@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Exercicio 09 - Sequencial</title>
+
+</head>
+
+<body>
+    <h2>Exercicio 09 - Sequencial</h2>
+
+    <script>
+
+        var c = 0;
+        var f = 0;
+        var p = '';
+        
+        /* entrada de dados */
+        c = prompt('Informe a temperatura em Celsius');
+        
+        /* processar */
+        f = ( 9 * c + 160 ) / 5;
+
+        /* saida */
+        p = "<div style='margin: 0 auto; width: 940px; border: 1px solid purple; color: purple; text-align: center;'>";
+        document.writeln(p);  
+        
+        p = '<p>Temperatura em graus Celsius: ' + c + '</p>';
+        document.writeln(p);
+
+        p = '<p>Temperatura convertida para Fahreinheit: ' + f + '</p>';
+        document.writeln(p);
+
+        p = "</div>";
+        document.writeln(p); 
+
+    </script>
+
+</body>
+
+</html>

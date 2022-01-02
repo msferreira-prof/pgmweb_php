@@ -1,0 +1,148 @@
+/* regras CSS gerais */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    width: 940px;
+    margin: 0 auto;
+}
+
+/* regras aplicadas a sessao 'cabecalho' - classe cabecalho */
+.cabecalho {
+    background-color: rgb(192, 192, 192, 0.5);
+    padding: 5px 0;
+}
+
+.cabecalho h1 {
+    color: rgb(139, 0, 139);
+    padding: 25px 0;
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+}
+
+/* regras CSS aplicadas a sessao 'main' - classes diversas */
+.texto-principal {
+    font-family: 'Roboto Mono', monospace;
+    text-align: justify;
+    padding: 20px 0;
+    line-height: 1.5em;     /* aumenta o espacamento entre linhas em 50% em relacao ao tamanho da fonte (16px) padrao do documento */
+}
+
+/* regras CSS aplicadas a classe 'pierre-verger' no parágrafo inicial */
+.pierre-verger {
+    font-weight: bold; 
+    color: #0000ff"
+}
+
+.pierre-verger a {
+    text-decoration: none;
+}
+
+.pierre-verger a:visited {
+    color: #0000ff;
+}
+
+.cabecalho-secao {
+    font-family: 'Noto Sans JP', sans-serif;
+    border-bottom: 1px solid #000000;
+    padding-top: 15px;
+    padding-bottom: 2px;
+}
+
+.fotos {
+    padding: 5px 0;
+}
+
+/* classe que define as regras da lista de fotos */
+.lista-fotos {
+    width: 940px;               /* define a largura do elemento */
+    margin: 0 auto;             /* define que o elemento 'ul' seja centralizado no elemento 'section' */
+    padding: 20px 0;     /* define um espaço entre as bordas superior e inferior e o conteudo */ 
+    list-style: none;
+    /* background-color: darksalmon; */
+}
+
+.lista-fotos li {
+    width: 30%;             /* define que cada elemento 'li' tenha 30% de tamanho em relação ao elemento 'ul' */
+    display: inline-block;  /* apresenta os elementos 'li' como inline e bloco */ 
+    vertical-align: top;
+
+    margin: 0 1.5%;
+    box-sizing: border-box;
+    padding: 5px 0;
+
+    text-align: center;
+
+    border: 2px solid rgb(139, 0, 139);
+    border-radius: 10px;
+
+    /* background-color: wheat; */
+}
+
+.lista-fotos h2 {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 26px;
+    color:rgb(139, 0, 139);
+    margin: 10px;
+}
+
+.lista-fotos img {
+    width: 90%;             /* define o tamanho da imagem para 90% do elemento pai */
+    height: 90%;
+    border-radius: 10px;    /* arredonda os cantos da borda */
+    /* padding: 10px 0;
+    background-color: rosybrown; */
+}
+
+.lista-fotos p {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 22px;
+    color:rgb(139, 0, 139);
+    margin: 10px 0;
+}
+
+/* efeitos nas fotos */
+.lista-fotos li:hover {
+    border: 4px solid olive;
+}
+
+/* define o rodape */
+/* define um conjunto de regras para os elementos 'h3' contido no elemento com id igual a 'fontes' */
+
+#fontes {
+    background-color: rgb(192, 192, 192, 0.5);
+    padding: 15px 5px;
+    box-sizing: border-box;
+}
+
+#fontes h3 {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 20px;
+    color: rgb(139, 0, 139);
+    border-bottom: 1px solid rgb(139, 0, 139);
+}
+
+#fontes p {
+    font-family: 'Roboto Mono', monospace;
+    text-align: justify;
+    padding: 10px 0 0 0;
+    line-height: 1.5em;
+    /* border: 1px solid black; */
+}
+
+/* define um conjunto de regras para todos os elementos 'a' de qualquer elemento 'li' de qualquer elemento 'ul' contidos em um elemento com id igual a 'fontes' */
+#fontes a {
+    text-decoration: none;
+} 
+
+#fontes a:visited {
+    color: rgb(139, 0, 139);
+}
+
+/* define um conjunto de regras para subclasses */
+.fonte-bold {
+    font-weight: bold;
+}

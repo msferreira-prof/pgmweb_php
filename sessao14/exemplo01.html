@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Eventos</title>
+
+</head>
+
+<body>
+    <h2>Exemplos através de Eventos</h2>
+
+    <div>
+        <button id="botao" name style class onclick>Clique aqui</button>
+        <p></p>
+    </div>
+
+    <script>
+        var divi = document.querySelector('div');
+        var botao = document.getElementById('botao');
+
+        function preencherBackgroundColor() {
+            document.body.style.backgroundColor = 'rgb(0, 0, 255)';
+        }
+
+        function criarParagrafo() {
+            var pgfo = document.querySelector('p');
+            pgfo.style.color = 'white';
+            pgfo.style.fontSize = '20px';
+            pgfo.innerHTML = 'Parágrafo inserido pelo botão!';
+        }
+
+        // botao.onclick = preencherBackgroundColor;
+
+        botao.addEventListener('click', preencherBackgroundColor);
+        botao.addEventListener('click', criarParagrafo);
+    </script>
+
+</body>
+
+</html>

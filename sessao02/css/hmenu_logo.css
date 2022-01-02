@@ -1,0 +1,98 @@
+/* importacao de fontes Google
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+*/
+
+/* variaveis CSS */
+:root {
+    --main-color:  rgb(10, 18, 124);
+    --second-color:  rgb(255, 255, 255);
+}
+
+/* menu horizontal */
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.cabecalho {
+    background-color:  rgb(213, 216, 179);
+    padding: 10px 0;
+}
+
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: auto;
+}
+
+#hmenu {
+    position: absolute;
+    top: 55px;
+    right: 0;
+}
+
+#hmenu ul li { 
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+#hmenu ul li a {
+    color: #024b4b;
+    text-decoration: none;
+    transition: background .3s;
+
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 22px;
+    margin-right: 15px;
+}
+
+#hmenu ul li:last-child a {
+    color: rgb(224, 134, 30);
+}
+
+#hmenu ul li a:hover {
+    color: rgb(224, 134, 30);
+    border-bottom: 1px solid rgb(224, 134, 30);
+}
+
+#hmenu ul li:last-child a:hover {
+    color: #440339;
+    border-bottom: 1px solid rgb(224, 134, 30);
+}
+
+/* texto */
+main {
+    width: 940px;
+    clear: both;
+}
+
+article {
+    padding: 10px 0;
+}
+
+section {
+    padding: 10px 0;
+}
+
+section h2 {
+    margin: 0 0 10px 0;
+}
+
+section p {
+    padding: 5px 0 5px 0;
+    text-align: justify;
+}
+
+footer {
+    width: 940px;
+}
+
+#arrow_upward {
+    color: blue;
+    float: right;
+}
+

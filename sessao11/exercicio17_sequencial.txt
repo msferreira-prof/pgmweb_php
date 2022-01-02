@@ -1,0 +1,78 @@
+1. Definir o problema.                  ok
+2. Executar uma análise preliminar.     ok
+3. Criar uma solução.                   ok
+4. Aplicar o teste de qualidade.        nok
+5. Refinar a solução (Alteração).       ok 
+6. Apresentar o produto final.          ok
+
+
+Faça um algoritmo que receba o valor de um depósito e o valor da taxa de juros e exiba o valor do 
+rendimento e o valor total depois do rendimento. (após 1 mes de rendimento)
+
+
+1. recebo os valores (valor  deposito / valor taxa de juros)
+2. calcular rendimentos e valor total 
+3. exibo valor do rendimento / valor total depois do rendimento
+
+1. recebo os valores (valor  deposito / valor taxa de juros)
+1.1 (1) ler valorDeposito
+1.2 (2) ler taxaJuros
+
+2. calcular rendimentos e valor total 
+2.1 (3) rendimento <- valorDeposito * taxaJuros / 100
+2.2 (4) valorTotalRendim <- valorDeposito + rendimento
+
+3. exibo valor do rendimento / valor total depois do rendimento
+3.1 (5) escrever rendimento
+3.2 (6) escrever valorTotalRendim
+
+algoritimo CalcularRendimento
+variaveis
+    valorDeposito: real
+    taxaJuros: real
+    rendimento: real
+    valorTotalRendim: real
+    
+    resultado: texto 
+
+inicio    
+    valorDeposito    <- 0
+    taxaJuros        <- 0
+    rendimento       <- 0
+    valorTotalRendim <- 0
+    
+    escrever "Informe o valor do Deposito"
+    ler valorDeposito
+    
+    escrever "Informe a taxa de juros"
+    ler taxaJuros
+    
+    rendimento <- valorDeposito * taxaJuros / 100
+    valorTotalRendim <- valorDeposito + rendimento
+    
+    escrever "Rendimentos: "
+    escrever rendimento
+    escrever "%"
+    
+    escrever "Valor total com Rendimentos: "
+    escrever valorTotalRendim
+    
+fim   
+
+
+
+
+1. o usuario informa valor do Deposito
+2. o usuario informa taxa de Juros
+
+3. o rendimento corresponde ao valor do Deposito multiplicado pela taxa de Juros dividida por 100
+4. o valor Total de Rendimentos corresponde ao valor do Deposito acrescido do rendimento calculado
+
+5. o rendimento é apresentado ao usuario
+6. o valor do Total de Rendimentos é apresentado ao usuario
+
+
+
+
+
+

@@ -1,0 +1,153 @@
+Construa um algoritmo que leia três valores reais e apresente o maior e o menor deles.
+
+/* Guilherme */
+leia numero1
+leia numero2
+leia numero3
+
+Se numero1 é menor ou igual que numero2
+    numero1 recebe numero 2
+Se numero1 é menor ou igual que numero3
+    numero1 recebe numero3
+
+exibir numero1
+--------------------------
+
+/* Bruno */
+ler numero1
+ler numero2 
+ler numero3
+
+se numero1 > numero2
+    entao 
+        se numero1 > numero3
+            entao 
+                numero1 é maior
+            senao   
+                se numero1 = numero3
+                    entao 
+                        numero1 / numero3 sao maiores
+                    senao 
+                        numero3 é maior
+                fim-se
+        fim-se            
+    senao 
+        se numero1 = numero2 
+            entao 
+                se numero2 > numero3
+                    entao                        
+                        numero1 / numero2 sao maiores
+                    senao
+                        se numero2 = numero3
+                            entao
+                                numero1 / numero2 / numero3 maiores
+                            senao 
+                                numero3 é maior
+                        fim-se
+                fim-se
+            senao 
+                se numero2 > numero3 
+                    entao
+                        numero2 é maior
+                    senao 
+                        se numero2 = numero3
+                            entao 
+                                numero2 / numero3 sao maiores
+                            senao 
+                                numero3 é maiores
+                        fim-se        
+                fim-se
+        fim-se
+fim-se
+----------------------------
+
+/* Marcos */
+
+ler numero1
+ler numero2 
+ler numero3
+
+maior <- numero1
+menor <- numero1
+
+se numero2 > maior
+    entao 
+        se numero2 >= numero3
+            entao 
+                maior <- numero2
+            senao   
+                maior <- numero3
+        fim-se            
+    senao
+        menor <- numero2
+        se numero3 > maior
+            entao 
+                maior <- numero3
+        fim-se
+fim-se
+
+se numero3 < menor  
+    entao 
+        menor <- numero3
+fim-se
+
+escreva maior
+escreva menor
+----------------------------------
+
+
+/* Exemplos de Repetição para o Algoritmo deste exercicio */
+
+/* enquanto */
+leia continuaSN
+enquanto continuaSN = "S" faça
+
+    leia numero1
+    leia numero2
+    leia numero3
+
+    Se numero1 é menor ou igual que numero2
+        numero1 recebe numero 2
+    Se numero1 é menor ou igual que numero3
+        numero1 recebe numero3
+
+    exibir numero1
+
+    leia continuaSN        
+
+fim-enquanto    
+
+
+/* para de ate */
+para contador de 1 ate 10 passo 1 faça
+
+    leia numero1
+    leia numero2
+    leia numero3
+
+    Se numero1 é menor ou igual que numero2
+        numero1 recebe numero 2
+    Se numero1 é menor ou igual que numero3
+        numero1 recebe numero3
+
+    exibir numero1
+
+fim-para
+
+/* repita ate */
+repita 
+
+    leia numero1
+    leia numero2
+    leia numero3
+
+    Se numero1 é menor ou igual que numero2
+        numero1 recebe numero 2
+    Se numero1 é menor ou igual que numero3
+        numero1 recebe numero3
+
+    exibir numero1
+
+    leia continuaSN
+    
+ate continuaSN = "N"

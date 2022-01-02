@@ -1,0 +1,103 @@
+<!DOCType HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Exercícios Javascript</title>
+    <style>
+        .entrada,
+        .resultado,
+        .botoes {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Exercicio Javascript 04 - Lista Seleção</h2>
+
+    <!-- inicio do codigo Javascript -->
+    <script type="text/javascript">
+        // declaracao de variaveis
+        var num1, num2, num3, num4;
+
+        // inicializacao de variaveis
+        num1 = 0;
+        num2 = 0;
+        num3 = 0;
+        num4 = 0;
+
+        // entrada de dados
+        num1 = prompt("Informe o 1o. numero");
+        num2 = prompt("Informe o 2o. numero");
+        num3 = prompt("Informe o 3o. numero");
+        num4 = prompt("Informe o 4o. numero");
+
+        // processamento atraves da execucao da funcao para cada numero
+        verificarDivisao( num1 );
+        verificarDivisao( num2 );
+        verificarDivisao( num3 );
+        verificarDivisao( num4 );
+
+
+        function verificarDivisao( numero ) {
+            // declaracao de variaveis da funcao
+            var restoDiv_2, restoDiv_3;
+
+            // inicializacao de variaveis
+            restoDiv_2 = 0;
+            restoDiv_3 = 0;
+
+            // processamento
+            restoDiv_2 = numero % 2;
+            restoDiv_3 = numero % 3;
+
+            if (restoDiv_2 == 0 && restoDiv_3 == 0) {
+                document.writeln("<p>" + "O numero " + numero + " é divisivel por 2 e 3" + "</p>");
+            } else {
+                document.writeln("<p>" + "O numero " + numero + " não é divisivel por 2 e 3" + "</p>");
+            }
+            
+            return;
+        }
+
+    </script>
+    <!-- fim do codigo Javascript -->
+
+    <!--
+        Algoritmo
+        inicio
+            ler num1
+            ler num2
+            ler num3
+            ler num4
+
+            verificarDivisao( num1 )
+            verificarDivisao( num2 )
+            verificarDivisao( num3 )
+            verificarDivisao( num4 )
+
+            procedimento verificarDivisao( numero: inteiro )
+            variaveis
+                restoDiv_2: inteiro
+                restoDiv_3: inteiro
+                
+            inicio
+
+                restoDiv_2 = numero / 2;
+                restoDiv_3 = numero / 3;
+
+                se restoDiv_2 igual a zero E restoDiv_3 = 0 
+                    entao
+                        escreva "O numero ", numero, "é divisivel por 2 e 3"
+                    senao         
+                        escreva "O numero ", numero, "não é divisivel por 2 e 3"
+                fim-se
+                
+            fim     
+        fim
+-->
+
+</body>
+
+</html>

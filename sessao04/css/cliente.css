@@ -1,0 +1,28 @@
+#section-como-chegar, #section-sobre-nos {
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 2%;
+    box-sizing: border-box;
+    /* border: 1px solid rgb(3, 1, 1); */
+}
+
+.quem-somos p, .como-chegar p {
+    padding-top: 5px;
+    text-align: justify;
+}
+
+.mapa-como-chegar {
+    width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid purple;
+    border-radius: 4px;
+}
+
+
+.video-fabricacao-tenis {
+    padding: 10px;
+    margin: 0 auto;
+}
+

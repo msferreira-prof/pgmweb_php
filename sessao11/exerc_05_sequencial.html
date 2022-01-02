@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Poupança Programada</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+    <script type="text/javascript">
+        // PoupancaProgramada
+
+        var P; // valor: real
+        var i; // taxa: real
+        var n; // numeroMeses: inteiro
+        var rendimento; // real
+        var resultado; // string
+
+        P = prompt("Informe o valor da aplicacao");
+        i = prompt("Informe a taxa de rendimento");
+        n = prompt("Informe o número de meses da aplicacao");
+
+        i = i / 100;
+
+        rendimento = (P * (1 + i) ** (n - 1)) / i;
+
+        resultado = "O rendimento da aplicao de R$ ";
+        resultado = resultado + P;
+        resultado = resultado + " à uma taxa de ";
+        resultado = resultado + i;
+        resultado = resultado + "% e por ";
+        resultado = resultado + n;
+        resultado = resultado + " meses será de R$ ";
+        resultado = resultado + rendimento.toPrecision(3);
+        resultado = resultado + "."
+
+        alert(resultado);
+        console.log(resultado);
+        document.write(resultado);
+    </script>
+
+</body>
+
+</html>

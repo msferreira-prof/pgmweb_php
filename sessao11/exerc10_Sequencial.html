@@ -1,0 +1,82 @@
+<!DOCType HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Template Exercícios Javascript</title>
+    <style>
+        .entrada, .resultado, .botoes {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Lista Exercícios Algor. Sequenciais - Exercício 01</h2>
+    
+    <!-- inicio do codigo Javascript -->
+    <script type="text/javascript">
+
+    /* 
+    Faça um algoritmo que leia quatro números informados pelo usuário e 
+    que depois imprima a média ponderada, sabendo-se que os pesos são
+    respectivamente: 1, 2, 3 e 4.
+    */
+
+    /* declara as variavies */
+    var numero01, numero02, numero03, numero04, mediaPonderada;
+    var num01_p01, num02_p02, num03_p03, num04_p04;
+    var soma_numeros_peso, vlr_total_peso;
+
+    /* inicia as variaveis */
+    numero01 = 0;
+    numero02 = 0;
+    numero03 = 0;
+    numero04 = 0;
+    mediaPonderada = 0;
+
+    num01_p01 = num02_p02 = num03_p03 = num04_p04 = 0;
+    soma_numeros_peso = 0;
+    vlr_total_peso = 0;
+
+    /* entrada dos dados */
+    numero01 = prompt("Informe o 1o. número");
+    numero02 = prompt("Informe o 2o. número");
+    numero03 = prompt("Informe o 3o. número");
+    numero04 = prompt("Informe o 4o. número");
+
+    /* processar */
+    /* media ponderada
+       soma dos numeros multiplicados pelo seu peso e divida pela soma dos pesos
+       (n1 * p1 + n2 * p2 + nn * pn) / (n1 + n2 + ... + nn)
+    */
+    
+    num01_p01 = numero01 * 1;
+    num02_p02 = numero02 * 2;
+    num03_p03 = numero03 * 3;
+    num04_p04 = numero04 * 4;
+    
+    soma_numeros_peso = (num01_p01 + num02_p02 + num03_p03 + num04_p04);
+
+    // apresenta uma caixa com uma mensagem e um botao de OK */
+    alert("Soma dos números x seus pesos: " + soma_numeros_peso);
+
+    vlr_total_peso = (1 + 2 + 3 + 4);
+
+    mediaPonderada = soma_numeros_peso / vlr_total_peso;
+    // mediaPonderada = (numero01 * 1 + numero02 * 2 + numero03 * 3 + numero04 * 4) / (1 + 2 + 3 + 4);  
+
+    // exibe o valor no console 
+    console.log("Soma dos números x seus pesos: " + soma_numeros_peso);
+    console.log("Soma dos pesos: " + vlr_total_peso);
+    console.log("Media ponderada: " + mediaPonderada);
+
+    /* saida de dados */
+    document.writeln("<p>Resultado da Média Ponderada: " + mediaPonderada + "</p>");
+
+    </script>
+    <!-- fim do codigo Javascript -->
+
+</body>
+
+</html>

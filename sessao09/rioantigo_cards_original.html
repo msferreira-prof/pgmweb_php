@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Rio Antigo - Bootstrap</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- define e insere um favicon no documento HTML -->
+    <link href="img/logo-rioantigo-ico.ico" rel="shortcut icon">
+
+    <!-- Bootstrap -->
+    <!-- insira este conteudo aqui que representa o CSS do Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <link href="css/meu-estilo.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- seu codigo comeca aqui -->
+
+    <!-- container bootstrap -->
+    <header class="container px-0">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light px-0">
+
+            <!-- logo -->
+            <div>
+                <a class="navbar-brand mx-auto">
+                    <img src="img/logo-rioantigo-200x75.png">
+                </a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynavbar"
+                aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Navegação Alternativa">
+                Menu <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- menu -->
+            <div class="collapse navbar-collapse justify-content-end" id="mynavbar">
+                <div class="navbar-nav">
+                    <a href="index.html" class="nav-link">Início</a>
+                    <a href="rioantigo_cards.html" class="nav-link">Imagens</a>
+                    <a href="rioantigo_estorias.html" class="nav-link">Estórias</a>
+                    <a href="rioantigo_lista.html" class="nav-link">Locais</a>
+                    <a href="rioantigo_contato.html" class="nav-link">Contato</a>
+                    <a href="sobre.html" class="nav-link">Sobre</a>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- container bootstrap, margin: 2px , width: 75% , margin-left/margin-right: auto (centralizar o container) -->
+    <main class="container m-2 w-75 mx-auto my-font-family">
+
+        <div class="row">
+            <div class="col text-center m-0">
+                <!-- margin-top: 4px , margin-bottom: 5px -->
+                <h2 class="mt-2 mb-5 my-h2">
+                    Imagens do Rio Antigo <span class="badge badge-pill badge-info my-badge-vertical-align-super">Novo</span>
+                
+                </h2>
+            </div>
+        </div>
+
+        <div class="row text-primary">
+
+            <!-- breakpoint sm - 2 colunas, breakpoint md - 3 colunas, breakpoint lg - 6 colunas -->
+            <div class="col-md-6 col-lg-4 mb-2">
+
+                <!-- div com um card do Bootstrap -->
+                <div class="card">
+                    
+                    <!-- imagem no topo do card do Bootstrap -->
+                    <img src="img/rio-de-janeiro-flamengo-1940.jpg" alt="Bairro Flamengo" class="card-img-top">
+
+                    <!-- corpo do card do Bootstrap -->
+                    <div class="card-body">
+
+                        <!-- titulo do card do Bootstrap -->
+                        <h5 class="card-title border-bottom meu-h5-font-size">Flamengo</h5>
+                        
+                        <!-- texto do card do Bootstrap -->
+                        <p class="card-text text-justify">
+                            Bairro conhecido por seu amplo parque de mesmo nome, com locais para piquenique, concertos
+                            ao ar livre e pistas de corrida.
+                        </p>
+                    </div>
+
+                    <!-- rodape do card do Bootstrap -->
+                    <div class="card-footer text-muted text-center">
+                        <!-- texto do footer do card do Bootstrap -->
+                        <p class="card-text">1940</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-2">
+                <div class="card">
+                    <img src="img/aterro-do-flamengo-1940-41.jpg" alt="Aterro do Flamengo" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title meu-h5-font-size border-bottom">Aterro</h5>
+                        <p class="card-text text-justify">
+                            <td>Complexo de lazer da cidade do Rio de Janeiro construído sobre aterros sucessivos na
+                                baía de Guanabara e inaugurado em 1965.</td>
+                        </p>
+                    </div>
+                    <div class="card-footer text-muted text-center">
+                        <p class="card-text">1940</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-2">
+                <div class="card">
+                    <img src="img/copacabana-1940.jpg" alt="Copacabana" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title meu-h5-font-size border-bottom">Copacabana</h5>
+                        <p class="card-text text-justify">Famosa pela praia em forma de meia-lua e um dos bairros mais
+                            animados do
+                            Rio. Tem o apelido de Princesinha do Mar.</p>
+                    </div>
+                    <div class="card-footer text-muted text-center">
+                        <p class="card-text">1940</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-2">
+                <div class="card">
+                    <img src="img/praia-copacabana-1940.jpg" alt="Copacabana" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title meu-h5-font-size border-bottom">Praia de Copacabana</h5>
+                        <p class="card-text text-justify">Uma das praias mais emblemáticas do Brasil! Tornou-se famosa e
+                            hoje é um dos maiores pontos de interesse no Rio de Janeiro. </p>
+                    </div>
+                    <div class="card-footer text-muted text-center">
+                        <p class="card-text">1940</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-2">
+                <div class="card">
+                    <img src="img/vista-chinesa-1940.jpg" alt="Vista Chinesa" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title meu-h5-font-size border-bottom">Vista Chinesa</h5>
+                        <p class="card-text text-justify">A Vista Chinesa é um mirante em estilo chinês localizado no
+                            bairro do Alto
+                            da Boa Vista. Está localizado dentro da Floresta da Tijuca.</p>
+                    </div>
+                    <div class="card-footer text-muted text-center">
+                        <p class="card-text">1940</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-2">
+                <div class="card">
+                    <img src="img/centra-brasil-1940.jpg" alt="Central do Brasil" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title meu-h5-font-size border-bottom">Central</h5>
+                        <p class="card-text text-justify">Estação de trens metropolitanos localizada no centro da
+                            cidade. Até o ano de 1998 se
+                            chamava Estação Dom Pedro II.</p>
+                    </div>
+                    <div class="card-footer text-muted text-center">
+                        <p class="card-text">1940</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-2">
+                <div class="card">
+                    <img src="img/senado-federal.jpg" alt="Senado Federal" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title meu-h5-font-size border-bottom">Palácio Monroe</h5>
+                        <p class="card-text text-justify">Antigo Senado Federal entre 1925 e 1960 e localizado no centro
+                            do Rio de Janeiro. Foi considerado pequeno para a função.</p>
+                    </div>
+                    <div class="card-footer text-muted text-center">
+                        <p class="card-text">1940</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-2">
+                <div class="card">
+                    <img src="img/cinelandia.jpg" alt="Cinelândia" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title meu-h5-font-size border-bottom">Cinelândia</h5>
+                        <p class="card-text text-justify">Nome popular da região do entorno da Praça Floriano, no centro
+                            da cidade do
+                            Rio de Janeiro e conhecida pela concentração de cinemas.</p>
+                    </div>
+                    <div class="card-footer text-muted text-center">
+                        <p class="card-text">1940</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-2">
+                <div class="card">
+                    <img src="img/teatro-municipal-rj-1940.jpg" alt="Teatro Municipal" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title meu-h5-font-size border-bottom">Municipal</h5>
+                        <p class="card-text text-justify">O Theatro Municipal do Rio de Janeiro é um dos mais
+                            importantes teatros
+                            brasileiros. Localizado na Cinelândia.</p>
+                    </div>
+                    <div class="card-footer text-muted text-center">
+                        <p class="card-text">1940</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-2">
+                <div class="card">
+                    <img src="img/R-do-Ouvidor-1941.jpg" alt="Rua do Ouvidor" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title meu-h5-font-size border-bottom">Rua do Ouvidor</h5>
+                        <p class="card-text text-justify">Originou-se de um caminho que dava acesso aos armazéns ou
+                            trapiches, como eram conhecidos à época, do antigo porto do Rio.</p>
+                    </div>
+                    <div class="card-footer text-muted text-center">
+                        <p class="card-text">1940</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-2">
+                <div class="card">
+                    <img src="img/carnaval-1940.jpg" alt="Carnaval 1940" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title meu-h5-font-size border-bottom">Carnaval</h5>
+                        <p class="card-text text-justify">Festival do cristianismo ocidental que ocorre antes da estação
+                            litúrgica da Quaresma. Ocorrem tipicamente entre fevereiro e março.</p>
+                    </div>
+                    <div class="card-footer text-muted text-center">
+                        <p class="card-text">1940</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-2">
+                <div class="card">
+                    <img src="img/carnaval2-1940.jpg" alt="Carnaval 1941" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title meu-h5-font-size border-bottom">Carnaval</h5>
+                        <p class="card-text text-justify">É feito de desfiles e fantasias, sendo um produto da sociedade
+                            vitoriana do século XX e, teve Paris como modelo exportador da festa.</p>
+                    </div>
+                    <div class="card-footer text-muted text-center">
+                        <p class="card-text">1940</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-2">
+                <div class="card">
+                    <img src="img/av-beira-mar.jpg" alt="Av. Beira Mar" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title meu-h5-font-size border-bottom">Av. Beira
+                            Mar</h5>
+                        <p class="card-text text-justify">Localizada na orla do centro do Rio de Janeiro, foi idealizada
+                            quando
+                            Pereira Passos era
+                            prefeito do Rio e Rodrigues Alves presidia o Brasil.</p>
+                    </div>
+                    <div class="card-footer text-muted text-center">
+                        <p class="card-text">1940</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-2">
+                <div class="card">
+                    <img src="img/rua-goncalves-dias.jpg" alt="Gonçalves Dias" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title meu-h5-font-size border-bottom">
+                            Rua Gonçalves Dias</h5>
+                        <p class="card-text text-justify">Localizada no centro da cidades, seu nome homenageia o poeta
+                            brasileiro de mesmo nome. Inicialmente, era chamada de Rua do Latoeiros.</p>
+                    </div>
+                    <div class="card-footer text-muted text-center">
+                        <p class="card-text">1940</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="container text-center">
+        <!-- linha (grid system), border-top, cor aplicada na borda, background-color (cor de fundo) -->
+        <div class="row border-top border-primary bg-light">
+            <div class="col-2"></div>
+            <div class="col-8 text-center">
+                <h5>Fontes</h5>
+                <p>Esta página foi montada a partir do trabalho de <a
+                        href="https://theurbanearth.wordpress.com/2009/02/24/rio-de-janeiro-anos-40/"
+                        target="_blank"><span class="fonte-bold">Cecilia Lucchese</span></a>, disponível através do blog
+                    <a href="https://theurbanearth.wordpress.com/" target="_blank"><span class="fonte-bold">THE URBAN
+                            EARTH -
+                            Reflexões para um mundo urbanizado</span></a> de sua autoria.
+                </p>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row bg-light my-0">
+            <div class="col font text-primary copyright">
+                <p>&copy; Copyright Pmg Web</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- seu codigo termina aqui -->
+
+    <!-- Bootstrap -->
+    <!-- insira este conteudo do Bootstrap aqui, antes do fechamento do "body" -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+    </script>
+
+    <!-- os scripts abaixo tambem podem ser utilizados ao inves dos dois acima -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+
+</body>
+
+</html>

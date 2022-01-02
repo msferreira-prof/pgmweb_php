@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: 'Open Sans', sans-serif;
+}
+
+.cabecalho {
+    background-color: #dfcde7;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.conteudo {
+    /* border: #ffffff 1px solid ; */
+    padding: 20px 0;
+    width: 680px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.conteudo h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    color: #470864;
+    border-bottom: 1px solid #470864;
+}
+
+.divform {
+    width: 50%;
+    background-color: rgb(253, 253, 253);
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.divform fieldset {
+    border: none;
+}
+
+.label {
+    font-size: 20px;
+    padding: 8px 0 6px 0;
+}
+
+.divform input[type=number], .divform input[type=text] {
+    width: 100%;
+    padding: 10px 10px;
+    margin: 6px 0;
+    box-sizing: border-box;
+    border: 1px solid #470864;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+.divform input[type=number]:focus, .divform input[type=text]:focus {
+    border: 2px solid #555;
+}
+
+.calendario input[type=date] {
+    width: 100%;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    border: 1px solid #470864;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+.botoes {
+    width: 75%;
+    margin: 15px auto;
+}
+
+.botoes input[type=reset], .botoes input[type=submit] {
+    background-color: #470864;
+    color: #fff;
+    padding: 8px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.botoes input[type=reset]:hover, .botoes input[type=submit]:hover {
+    background-color: #1d1322;
+}
+
+.lista-funcionarios {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+th {
+    text-align: center;
+    font-size: 24px;
+    color: #008080;
+    background-color: rgb(249, 255, 206);
+}
+
+th, tr {
+    border-bottom: 1px solid rgb(214, 193,226);
+    padding: 12px 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+tr:hover {
+    background-color: #ddd;
+}

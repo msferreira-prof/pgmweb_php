@@ -9,13 +9,6 @@ $valorFinal  = 0;
 $valorCompra = $_POST['valorCompra'];
 $valorCompra = floatval($valorCompra);
 
-/* 
-    recupera o valor do campo "hidden" definido no formulário HTML 
-    somente funcionará para o formulário do documento 
-    exerc06_javascript_funcao.html
-*/
-$valorFinal_Javascript = $_POST['valorFinal'];
-
 /* processamento */
 if ($valorCompra >= 5000) {
     $desconto = 0.2;
@@ -28,5 +21,23 @@ $valorFinal = $valorCompra - ($valorCompra * $desconto);
 /* saida */
 echo "Valor final da Compra = $valorFinal";
 echo "<br>";
-echo "Valor final da Compra - Javascript = $valorFinal_Javascript";
 
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+	
+$vetorIdade       = array(10, 20, 30);
+$achou            = false; 
+$quantidadeIdades = count($vetorIdade);
+for ($indice = 0; $indice < $quantidadeIdades; $indice++) : 
+    if ($vetorIdade[$indice] == 20):
+        $achou = true;
+    endif;
+endfor;

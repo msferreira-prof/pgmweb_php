@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Desconto em Produto</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+    <form method="#" action="#">
+        <div>
+            <label for="idPrecoCusto">Informe o preço de custo</label>
+            <input type="text" name="precoCusto" id="idPrecoCusto">
+        </div>
+        <div>
+            <label for="idPercAcrescimo">Informe o percentual de acréscimo</label>
+            <input type="text" name="percAcrescimo" id="idPercAcrescimo">
+        </div>
+        <div>
+            <input type="reset" value="Limpar">
+            <input type="button" value="Calcular" id="btnCalcular">
+        </div>
+    </form>
+
+    <script type="text/javascript">
+
+        function calcular() {
+            let precoCusto, percentualAcrescimo, valorAcrescimo, valorVenda, resultado;
+
+            precoCusto = 0;
+            percentualAcrescimo = 0;
+            valorAcrescimo = 0;
+            valorVenda = 0;
+            resultado = "";
+
+
+            /* entrada */
+            precoCusto          = document.getElementById("idPrecoCusto").value;
+            percentualAcrescimo = document.getElementById("idPercAcrescimo").value;
+
+            /* processamento */
+            if (isNaN(precoCusto) || isNaN(percentualAcrescimo)) {
+            
+                resultado = "Os valores informados não permitem executar o cálculo." +
+                            " Percentual Acréscimo: " + percentualAcrescimo +
+                            " Preco de Custo: " + precoCusto;
+
+            } else {
+
+                valorAcrescimo = precoCusto * percentualAcrescimo / 100;
+                precoCusto = parseFloat(precoCusto);
+                valorVenda = precoCusto + valorAcrescimo;
+                    
+
+                resultado = "O produto com preço de Custo em R$ " + precoCusto +
+                        " após um acréscimo de " + percentualAcrescimo + "%" +
+                        " será vendido por R$ " + valorVenda;
+            }
+
+            /* saida */
+            alert( resultado );
+            console.log( resultado );
+            document.write( resultado );
+        }
+
+        /* atribuindo a funcao Calcular ao evento do botao Calcular */
+        var btnCalcular = document.getElementById("btnCalcular");
+        
+        btnCalcular.addEventListener("click", calcular);
+        // btnCalcular.onclick = calcular;
+
+    </script>
+
+</body>
+
+</html>

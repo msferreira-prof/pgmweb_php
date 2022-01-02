@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Rio Antigo - Bootstrap</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- define e insere um favicon no documento HTML -->
+    <link href="img/favicon_pgmweb.ico" rel="shortcut icon">
+
+    <!-- Bootstrap -->
+    <!-- insira este conteudo aqui que representa o CSS do Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <link href="css/meu_estilo.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- seu codigo comeca aqui -->
+
+    <!-- container bootstrap -->
+    <header class="container">
+        <!-- linha (grid system), border-bottom, cor aplicada na borda, text-align: center (alinhamento de conteudo), background-color (cor de fundo) -->
+        <div class="row border-bottom border-primary text-center bg-light">
+            <!-- coluna (grid system) -->
+            <div class="col">
+                <h1>Site sobre o Rio antigo</h1>
+            </div>
+        </div>
+
+        <!-- menu -->
+        <!-- linha (grid system), margin-top: 4px, margin-bottom: 4; alinhamento de conteudo ao centro -->
+        <div class="row mt-4 mb-4 text-center">
+            <!-- coluna (grid system) -->
+            <div class="col">
+                <!-- ancora, tipo botao, cor do botao, botao largo / papel=botao (para ser lido por aplicações de acessibilidade) -->
+                <a href="rioantigo.html" class="btn btn-primary btn-lg" role="button">Início</a>
+                <a href="rioantigo_lista.html" class="btn btn-primary btn-lg" role="button">Estórias</a>
+                <a href="sobre.html" class="btn btn-primary btn-lg" role="button">Sobre</a>
+            </div>
+        </div>
+
+        <!-- linha (grid system), margin-top: 4px, margin-bottom: 4; alinhamento de conteudo ao centro -->
+        <div class="row">
+            <!-- coluna (grid system) -->
+            <div class="col">
+                <!-- bloco tipo "alerta", alerta backgroundcolor, alerta pode ser desfeito / papel = alerta -->
+                <div class="alert alert-success alert-dismissible" role="alert">
+                    <!-- ancora, classe="close" botao pode ser desfeito -->
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                    Página carregada com sucesso!
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- container bootstrap, margin: 2px , width: 75% , margin-left/margin-right: auto (centralizar o container) -->
+    <main class="container m-2 w-75 mx-auto my-font-family">
+
+        <div class="row">
+            <div class="col text-center m-0">
+                <!-- margin-top: 4px , margin-bottom: 5px -->
+                <h2 class="mt-4 mb-5 my-h2">Imagens do Rio Antigo</h2>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <!-- breakpoint sm - 2 colunas, breakpoint md - 3 colunas, breakpoint lg - 6 colunas -->
+            <div class="col-sm-6 col-md-4 col-lg-2 text-center text-primary">
+                <h5 class="border-bottom border-primary meu-h5-font-size">Flamengo</h5>
+
+                <!-- CSS para a imagem: max-width: 100% + height: auto,  diversas regras (ver no CSS do Bootstrap) -->
+                <img src="img/rio-de-janeiro-flamengo-1940.jpg" alt="Bairro Flamengo" class="img-thumbnail">
+                <p>1940</p>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2 text-center text-primary">
+                <h5 class="border-bottom border-primary meu-h5-font-size">Aterro</h5>
+                <img src="img/aterro-do-flamengo-1940-41.jpg" alt="Aterro do Flamengo" class="img-thumbnail">
+                <p>1940</p>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2 text-center text-primary">
+                <h5 class="border-bottom border-primary meu-h5-font-size">Copacabana</h5>
+                <img src="img/copacabana-1940.jpg" alt="Copacabana" class="img-thumbnail">
+                <p>1940</p>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2 text-center text-primary">
+                <h5 class="border-bottom border-primary meu-h5-font-size">Copacabana</h5>
+                <img src="img/praia-copacabana-1940.jpg" alt="Copacabana" class="img-thumbnail">
+                <p class="foto-descricao">1940</p>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2 text-center text-primary">
+                <h5 class="border-bottom border-primary meu-h5-font-size">Vista Chinesa</h5>
+                <img src="img/vista-chinesa-1940.jpg" alt="Vista Chinesa" class="img-thumbnail">
+                <p>1940</p>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2 text-center text-primary">
+                <h5 class="border-bottom border-primary meu-h5-font-size">Central</h5>
+                <img src="img/centra-brasil-1940.jpg" alt="Central do Brasil" class="img-thumbnail">
+                <p>1940</p>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2 text-center text-primary">
+                <h5 class="border-bottom border-primary meu-h5-font-size">Senado Federal</h5>
+                <img src="img/senado-federal.jpg" alt="Senado Federal" class="img-thumbnail">
+                <p class="foto-descricao">1940</p>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2 text-center text-primary">
+                <h5 class="border-bottom border-primary meu-h5-font-size">Cinelândia</h5>
+                <img src="img/cinelandia.jpg" alt="Cinelândia" class="img-thumbnail">
+                <p class="foto-descricao">1940</p>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2 text-center text-primary">
+                <h5 class="border-bottom border-primary meu-h5-font-size">Municipal</h5>
+                <img src="img/teatro-municipal-rj-1940.jpg" alt="Teatro Municipal" class="img-thumbnail">
+                <p>1940</p>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2 text-center text-primary">
+                <h5 class="border-bottom border-primary meu-h5-font-size">Ouvidor</h5>
+                <img src="img/R-do-Ouvidor-1941.jpg" alt="Rua do Ouvidor" class="img-thumbnail">
+                <p>1940</p>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2 text-center text-primary">
+                <h5 class="border-bottom border-primary meu-h5-font-size">Carnaval</h5>
+                <img src="img/carnaval-1940.jpg" alt="Carnaval 1940" class="img-thumbnail">
+                <p>1940</p>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2 text-center text-primary">
+                <h5 class="border-bottom border-primary meu-h5-font-size">Carnaval</h5>
+                <img src="img/carnaval2-1940.jpg" alt="Carnaval 1941" class="img-thumbnail">
+                <p>1941</p>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2 text-center text-primary">
+                <h5 class="border-bottom border-primary meu-h5-font-size">Av. Beira Mar</h5>
+                <img src="img/av-beira-mar.jpg" alt="Av. Beira Mar" class="img-thumbnail">
+                <p class="foto-descricao">1940</p>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-2 text-center text-primary">
+                <h5 class="border-bottom border-primary meu-h5-font-size">Gonçalves Dias</h5>
+                <img src="img/rua-goncalves-dias.jpg" alt="Gonçalves Dias" class="img-thumbnail">
+                <p class="foto-descricao">1940</p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="container text-center">
+        <!-- linha (grid system), border-top, cor aplicada na borda, background-color (cor de fundo) -->
+        <div class="row border-top border-primary bg-light">
+            <div class="col">
+                <h5>Fontes</h5>
+                <p>Esta página foi montada a partir do trabalho de <a
+                        href="https://theurbanearth.wordpress.com/2009/02/24/rio-de-janeiro-anos-40/"
+                        target="_blank"><span class="fonte-bold">Cecilia Lucchese</span></a>, disponível através do blog
+                    <a href="https://theurbanearth.wordpress.com/" target="_blank"><span class="fonte-bold">THE URBAN
+                            EARTH -
+                            Reflexões para um mundo urbanizado</span></a> de sua autoria.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- seu codigo termina aqui -->
+
+    <!-- Bootstrap -->
+    <!-- insira este conteudo do Bootstrap aqui, antes do fechamento do "body" -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+    </script>
+
+    <!-- os scripts abaixo tambem podem ser utilizados ao inves dos dois acima -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+
+</body>
+
+</html>

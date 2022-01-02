@@ -1,0 +1,105 @@
+/* define um conjunto de regras para a classe 'hmenu' */
+/* a classe 'hmenu' eh utilizada pelo elemento 'nav' */
+.hmenu {
+    /* define uma cor de fundo para o elemento e todos os elementos dentro do elemento 'nav' */
+    background-color: rgb(213, 216, 179);
+    /* define a fonte para todos os elementos dentro do elemento 'nav' */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* 
+    define um conjunto de regras para os elementos 'ul' inseridos 
+    em um elemento que utilize a classe 'hmenu'
+*/
+.hmenu ul {             
+    list-style: none;   /* remove os bullets do item da lista */
+    padding: 0;         /* zera o espaco entre o conteudo dos elementos */
+}
+
+/* 
+    define um conjunto de regras para os elementos 'li' 
+    inseridos em um elemento 'ul' 
+    que utilize a classe 'hmenu' 
+*/
+.hmenu ul li {
+    display: inline;    /* define que os itens da lista nao ocupam a linha toda, apresentando-se lado a lado */
+}
+
+/* 
+    define um conjunto de regras para os elementos 'a' 
+    inseridos em um elemento 'li' 
+    inserido em um elemento 'ul' 
+    que utilize a classe 'hmenu' 
+*/
+.hmenu ul li a {
+    color: #000000; 
+    text-transform: uppercase;  /* define que o texto do elemento ancora (link) sera apresentado em letras maiusculas */
+    text-decoration: none;      /* remove a linha que sublinha o texto do elemendo ancora (link) */
+    padding: 20px;              /* define 20px como espaco entre o conteudo (texto) e a borda da ancora (link) */
+    display: inline-block;      /* define que o comportamento do elemento ancora (link) */
+}
+
+/* 
+    define uma pseudo-classe com um 
+    conjunto de regras invocado
+    quando o mouse eh passado sobre 
+    os elementos 'a' 
+    inseridos em um elemento 'li' 
+    inserido em um elemento 'ul' 
+    que utilize a classe 'hmenu' 
+    Em pseudo-chaves eh utilizado ':' e
+    a palavra-chave correpondente
+    Ex.: seletor:palavra-chave
+         a:hover
+
+*/
+.hmenu ul li a:hover {
+    background-color: rgb(36, 109, 206);  /* modifica a cor de fundo do elemento */
+    color: rgb(255, 255, 255);            /* modifica a cor do texto do elemento */
+}
+
+/* 
+    define uma pseudo-classe com um 
+    conjunto de regras invocado
+    após o acionamento/visita da URL
+    definida pela ancora ou link 
+    inseridos em um elemento 'li' 
+    inserido em um elemento 'ul' 
+    que utilize a classe 'hmenu' 
+    Em pseudo-chaves eh utilizado ':' e
+    a palavra-chave correpondente
+    Ex.: seletor:palavra-chave
+         a:visited
+*/
+/* 
+comentado propositadamente
+descomente para ver o efeito produzido
+.hmenu ul li a:visited {
+    color: cornflowerblue;
+}
+*/
+
+/* 
+    define um pseudo-elemento com um 
+    conjunto de regras que altera a 
+    primeira letra de todos os elementos 'h3' 
+    inseridos em um elemento 'section'.
+    Em pseudo-elementos são utilizados '::' e
+    a palavra-chave correpondente
+    Ex.: seletor::palavra-chave
+         h3::first-letter
+*/
+section h3::first-letter {
+    color: blue;
+}
+
+/* 
+    define uma pseudo-classe com um 
+    conjunto de regras invocado
+    quando o mouse eh passado sobre 
+    os elementos 'h3' 
+    inseridos em um elemento 'section' 
+*/
+section h3:hover {
+    font-size: 1.3em;   /* aumenta o tamanho de fonte em 130% sobre o tamanho baseado no elemento 'body' */
+}

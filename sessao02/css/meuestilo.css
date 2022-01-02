@@ -1,0 +1,136 @@
+/*
+seletor {
+    propriedade: valor;
+    ...
+    propriedade: valor;
+}
+*/
+
+/* 
+    seletor universal
+    define um conjunto de regras para todos
+    os elementos dentro do elemento body e 
+    para ele mesmo
+*/
+* {
+    /* 
+        define o tamanho dos quatro tipos de margem como 10px 
+        top     , right  , bottom  , left
+        superior, direita, inferior, esquerda
+        pode ser descrito como
+        margin: 10px 10px 10px 10px;
+        margin: 10px 10px;
+        margin: 10px;
+
+        caso queira apenas uma das margens, selecione-a
+        Ex.: margin-top: 10px;
+    */
+    margin: 10px;
+}
+
+/* 
+    seletor baseado no nome do elemento
+    define um conjunto de regras para todos
+    os elementos dentro do body
+*/
+body {
+    background-color: rgb(192, 192, 192);
+    color: blue;
+    font-family: Georgia, 'Times New Roman', Times, serif; /* define a fonte do texto */
+    width: 940px; /* define a largura do elemento body - 940px eh um padrao */
+}
+
+header {
+    color: rgb(217, 18, 18);
+    height: 150px;
+    background-color: tan;
+    
+     /* define um conjunto de regras para a borda inferior do elemento 'header' */
+    border-bottom-color: blue; /* cor da borda */
+    border-bottom-width: 1px;    /* largura da borda em pixels */
+    border-bottom-style: solid;  /* tipo de borda. neste caso uma linha solida */
+}
+
+/*
+    seletor de combinacoes de descendentes
+    indica que o conjunto de regras sera 
+    utilizado em todo elemento 'h' que 
+    esta inserido em um elemento 'header'
+*/
+header h1 {
+    border-bottom-width: 1px;
+    border-bottom-color: blue;
+    border-bottom-style: solid;
+}
+
+/* 
+    seletor baseado no atributo 'id' de um elemento HTML
+    define um conjunto de regras para o elemento
+    que possui um 'id' de mesmo valor
+    O 'id' deve ser unico entre todos os elementos HTML
+*/
+#cabecalho {
+    color: rgb(255, 0, 0);
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* 
+    seletor baseado em uma classe utilizada 
+    por um elemento HTML atraves do atributo 'class'
+    define um conjunto de regras para o elemento
+    que possui o valor do atributo 'class' definido 
+    Uma classe pode ser utilizada por diversos 
+    elementos HTML, estabelecendo um padrao em 
+    todos os documentos HTML da aplicacao
+*/
+#primeirop {
+    color: #18bbd8;
+}
+
+p {
+    color: #3f2606;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: 'Mate SC', serif;
+    font-size: 20px;     /* tamanho da fonte do texto */
+    font-style: normal;  /* estilo da fonte do texto */
+}
+
+h3 {
+    /* 
+        define a cor do texto e sua opacidade 
+        a propriedade 'opacity' tambem eh 
+        utilizada para definir a opacidade
+        seu valor pode ser definido entre 0 e 1
+        0 - totalmente transparente (invisivel)
+        entre 0 e 1 - translucido (visivel)
+        1 - totalmente opaco (solido)
+    */
+    color: rgba(255, 0, 0, 0.527);
+    border-bottom-color: rgb(0, 0, 0);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    /* background-color: darkmagenta; */
+}
+
+/*
+    classe criada com uma 'subclasse'
+    tecnica que facilitar o reuso de um conjunto
+    de regras CSS em um ou mais documentos HTML    
+    tecnica muito utilizada por frameworks
+    de CSS como o Bootstrap
+    Estabelece que a classe comporta alem do nome 
+    do elemento, um valor correspondente, dando a 
+    impressao que esta sendo usado heranca
+    Geralmente eh utilizada com a classe correspondente
+    ao nome do elemento
+    Ex.: 
+    <h3 class="h3-blue">Cabecalho</h3>
+*/
+.h3-blue {
+    color: rgb(0, 0, 255);
+}
+
+.h {
+    font-weight: normal;
+}

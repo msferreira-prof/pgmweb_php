@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Rio Antigo - Bootstrap</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- define e insere um favicon no documento HTML -->
+    <link href="img/favicon_pgmweb.ico" rel="shortcut icon">
+
+    <!-- Bootstrap -->
+    <!-- insira este conteudo aqui que representa o CSS do Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <link href="css/meu-estilo.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- seu codigo comeca aqui -->
+
+    <header class="container">
+        <div class="row border-bottom border-primary text-center bg-light">
+            <div class="col">
+                <h1>Rio antigo</h1>
+            </div>
+        </div>
+
+        <!-- menu -->
+        <div class="row mt-4 mb-4 text-center">
+            <div class="col">
+                <a href="index.html" class="btn btn-primary btn-lg" role="button">Início</a>
+                <a href="rioantigo_cards.html" class="btn btn-primary btn-lg" role="button">Imagens</a>
+                <a href="rioantigo_estorias.html" class="btn btn-primary btn-lg" role="button">Estórias</a>
+                <a href="rioantigo_lista.html" class="btn btn-primary btn-lg" role="button">Locais</a>
+                <a href="rioantigo_contato.html" class="btn btn-primary btn-lg" role="button">Contato</a>
+                <a href="sobre.html" class="btn btn-primary btn-lg" role="button">Sobre</a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="alert alert-success alert-dismissible" role="alert">
+                    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                    Página carregada com sucesso!
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="container m-2 w-75 mx-auto my-font-family">
+
+        <div class="row">
+            <div class="col text-center m-0">
+                <h2 class="mt-2 mb-0 my-h2">Locais do Rio Antigo</h2>
+            </div>
+        </div>
+
+        <!-- tabela responsiva -->
+        <div class="table-responsive">
+
+            <!-- classes para tabela (Bootstrap) , tabela sem borda, conteudo alinhado ao centro, ... , width: auto -->
+            <table class="table
+                          table-borderless
+                          text-center
+                          my-table-hover
+                          my-table-image
+                          my-table-td-first-child
+                          my-table-border-bottom
+                          my-table-th
+                          w-auto">
+
+                <!-- cabecalho -->
+                <thead>
+                    <!-- linhas -->
+                    <tr>
+                        <!-- colunas cabecalho -->
+                        <th>Local</th>
+                        <th>Objetivo</th>
+                        <th>Período</th>
+                        <th>Imagem</th>
+                    </tr>
+                </thead>
+
+                <!-- linhas -->
+                <tbody>
+                    <tr>
+                        <!-- colunas -->
+                        <td>Aterro do Flamengo</td>
+                        <td>Complexo de lazer da cidade do Rio de Janeiro.</td>
+                        <td>1940</td>
+                        <td><img src="img/aterro-do-flamengo-1940-41.jpg" alt="Aterro do Flamengo" height="70"
+                                width="70" class="img-fluid img-thumbnail">
+                        </td>
+                    </tr>
+                    <tr>
+                        <!-- colunas -->
+                        <td>Flamengo</td>
+                        <td>Bairro conhecido por seu amplo parque de mesmo nome, com locais para piquenique, concertos
+                            ao ar
+                            livre e pistas de corrida ao longo da praia.</td>
+                        <td>1940</td>
+                        <td><img src="img/rio-de-janeiro-flamengo-1940.jpg" alt="Bairro Flamengo" height="70" width="70"
+                                class="img-fluid img-thumbnail">
+                        </td>
+                    </tr>
+                    <tr>
+                        <!-- colunas -->
+                        <td>Copacabana</td>
+                        <td>Famosa pela praia em forma de meia-lua e um dos bairros mais animados do Rio.</td>
+                        <td>1940</td>
+                        <td><img src="img/copacabana-1940.jpg" alt="Copacabana" height="70" width="70"
+                                class="img-fluid img-thumbnail"></td>
+                    </tr>
+                    <tr>
+                        <!-- colunas -->
+                        <td>Praia de Copacabana</td>
+                        <td>Copacabana é uma das praias mais emblemáticas do Brasil.</td>
+                        <td>1940</td>
+                        <td><img src="img/praia-copacabana-1940.jpg" alt="Copacabana" height="70" width="70"
+                                class="img-fluid img-thumbnail"></td>
+                    </tr>
+
+                    <tr>
+                        <!-- colunas -->
+                        <td>Vista Chinesa</td>
+                        <td>A Vista Chinesa é um mirante em estilo chinês localizado no bairro do Alto da Boa Vista.
+                        </td>
+                        <td>1940</td>
+                        <td><img src="img/vista-chinesa-1940.jpg" alt="Vista Chinesa" height="70" width="70"
+                                class="img-fluid img-thumbnail"></td>
+                    </tr>
+
+                    <tr>
+                        <!-- colunas -->
+                        <td>Central do Brasil</td>
+                        <td>É uma das mais famosas estações de trens do Brasil que até o ano de 1998 se chamava Estação
+                            Dom
+                            Pedro II.</td>
+                        <td>1940</td>
+                        <td><img src="img/centra-brasil-1940.jpg" alt="Central do Brasil" height="70" width="70"
+                                class="img-fluid img-thumbnail"></td>
+                    </tr>
+
+                    <tr>
+                        <!-- colunas -->
+                        <td>Senado Federal</td>
+                        <td>Antigo Senado Federal localizado no centro do Rio de Janeiro.</td>
+                        <td>1940</td>
+                        <td><img src="img/senado-federal.jpg" alt="Senado Federal" height="70" width="70"
+                                class="img-fluid img-thumbnail"></td>
+                    </tr>
+
+                    <tr>
+                        <!-- colunas -->
+                        <td>Cinelândia</td>
+                        <td>Nome popular da região do entorno da Praça Floriano, no centro da cidade do Rio de Janeiro.
+                        </td>
+                        <td>1940</td>
+                        <td><img src="img/cinelandia.jpg" alt="Cinelândia" height="70" width="70"
+                                class="img-fluid img-thumbnail"></td>
+                    </tr>
+
+                    <tr>
+                        <!-- colunas -->
+                        <td>Teatro Municipal</td>
+                        <td>O Theatro Municipal do Rio de Janeiro[1] é um dos mais importantes teatros brasileiros.
+                            Localiza-se na Cinelândia, centro da cidade do Rio de Janeiro.</td>
+                        <td>1940</td>
+                        <td><img src="img/teatro-municipal-rj-1940.jpg" alt="Teatro Municipal" height="70" width="70"
+                                class="img-fluid img-thumbnail">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <!-- colunas -->
+                        <td>Beira Mar</td>
+                        <td>Localizada na orla do centro do Rio de Janeiro, foi idealizada quando Pereira Passos era
+                            prefeito do Rio e Rodrigues Alves presidia o Brasil.</td>
+                        <td>1940</td>
+                        <td><img src="img/av-beira-mar.jpg" alt="Av. Beira Mar" height="70" width="70"
+                                class="img-fluid img-thumbnail"></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+
+    <footer class="container text-center">
+        <!-- linha (grid system), border-top, cor aplicada na borda, background-color (cor de fundo) -->
+        <div class="row border-top border-primary bg-light">
+            <div class="col-2"></div>
+            <div class="col-8 text-center">
+                <h5>Fontes</h5>
+                <p>Esta página foi montada a partir do trabalho de <a
+                        href="https://theurbanearth.wordpress.com/2009/02/24/rio-de-janeiro-anos-40/"
+                        target="_blank"><span class="fonte-bold">Cecilia Lucchese</span></a>, disponível através do blog
+                    <a href="https://theurbanearth.wordpress.com/" target="_blank"><span class="fonte-bold">THE URBAN
+                            EARTH -
+                            Reflexões para um mundo urbanizado</span></a> de sua autoria.
+                </p>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row bg-light my-0">
+            <div class="col font text-primary copyright">
+                <p>&copy; Copyright Pmg Web</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- seu codigo termina aqui -->
+
+    <!-- Bootstrap -->
+    <!-- insira este conteudo do Bootstrap aqui, antes do fechamento do "body" -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+    </script>
+
+    <!-- os scripts abaixo tambem podem ser utilizados ao inves dos dois acima -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+
+</body>
+
+</html>

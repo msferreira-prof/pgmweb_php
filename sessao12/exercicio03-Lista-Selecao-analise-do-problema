@@ -1,0 +1,120 @@
+Analisando e refinando a solução do problema 
+---------------------------------------------
+
+1a. análise
+------------
+
+leia um determinado valor
+se o numero que eu li for positivo entao eu informo que ele é positivo
+senao se ele for negativo eu informo que ele é negativo
+senao se ele for igual a zero eu informo que ele é igual a zero.
+
+2a. análise
+------------
+positivo - é maior que zero
+negativo - é menor que zero
+zero     - igual a 0        
+
+leia um determinado valor
+se o numero que eu li é maior que zero entao eu informo que ele é positivo
+senao se ele menor que zero eu informo que ele é negativo
+senao se ele for igual a 0 eu informo que ele é igual a zero.
+
+3a. análise
+------------
+positivo - é maior que zero - > 0
+negativo - é menor que zero - < 0
+zero     - igual a 0        - = 0
+
+leia um determinado valor
+se o valor > 0 entao eu informo que ele é positivo
+senao se o valor < 0 entao eu informo que ele é negativo
+senao se o valor = 0 entao eu informo que ele é igual a zero.
+
+
+
+Algoritmos possíveis
+---------------------
+
+versão 01
+---------      
+inicio                                                 
+    ler valor -> (variavel)                            
+    se valor > 0                                       
+        entao                                          
+            escrever "o numero é positivo"             
+        senao                                          
+            se valor < 0                               
+                entao                                  
+                    escrever "o numero é negativo"     
+                senao                                  
+                    se valor = 0                       
+                        entao                          
+                            escrever "o numero é zero" 
+                    fim-se                             
+            fim-se                                     
+    fim-se                                             
+fim                                                    
+
+
+versão 02
+----------
+inicio 
+    ler valor -> (variavel)
+    se valor > 0  
+        entao 
+            escrever "o numero é positivo"
+    fim-se
+
+    se valor < 0 
+        entao 
+            escrever "o numero é negativo"
+    fim-se        
+
+    se valor = 0 
+        entao 
+            escrever "o numero é zero"
+    fim-se
+fim
+
+
+versão 03
+-----------
+inicio           
+    
+    para contador de 1 ate 100 passo 1 faca
+        
+        escrever "informe um valor"
+        ler valor
+        se valor > 0                                      
+            entao                                         
+                escrever "o numero é positivo"            
+            senao                                         
+                se valor < 0                              
+                    entao                                 
+                        escrever "o numero é negativo"    
+                    senao                                 
+                        escrever "o numero é zero"
+                fim-se   
+        fim-se 
+        
+    fim-para
+fim                                                   
+
+
+Javascript
+-------------
+<script>
+    var valor;
+    valor = prompt("Informe um valor");
+    if (valor > 0) {
+        alert("o numero é positivo");
+    } else {
+        if (valor < 0) {
+            alert("o numero é negativo");
+        } else {
+            alert("o numero é zero");
+        }
+    }
+</script>
+

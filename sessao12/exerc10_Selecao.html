@@ -1,0 +1,111 @@
+<!DOCType HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Exercícios Javascript</title>
+    <style>
+        .entrada,
+        .resultado,
+        .botoes {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Exercicio Javascript 10 - Lista Seleção</h2>
+
+    <!-- inicio do codigo Javascript -->
+    <script type="text/javascript">
+        // declaracao de variaveis
+        var num1, num2, num3;
+        var maior, menor;
+
+        // inicializacao de variaveis (para constar)
+        num1 = 0;
+        num2 = 0;
+        num3 = 0;
+        maior = 0;
+        menor = 0;
+
+        // entrada de dados
+        num1 = prompt("Informe o 1o. numero inteiro");
+        num2 = prompt("Informe o 2o. numero inteiro");
+        num3 = prompt("Informe o 3o. numero inteiro");
+
+        num1 = parseInt(num1);
+        num2 = parseInt(num2);
+        num3 = parseInt(num3);
+
+        /* escolhe o primeiro numero como maior e menor */
+        maior = num1;
+        menor = num1;
+
+        if (num2 > maior) { // compara o 2o num com o maior
+            if (num2 >= num3) { // 2o maior que o maior e compara com 3o
+                maior = num2; // 2o é o maior 
+            } else {
+                maior = num3; // 3o é o maior
+            }
+
+        } else {
+            menor = num2; // 2o é menor que o maior e menor que o 1o
+            if (num3 > maior) { // compara 3o com o maior
+                maior = num3; // 3o é maior
+            }
+        }
+
+        if (num3 < menor) { // compara 3o com menor
+            menor = num3; // 3o é menor
+        }
+
+
+        document.writeln("<p>Entre os números " +
+            num1 +
+            ", " +
+            num2 +
+            ", " +
+            num3 +
+            ":</p>");
+        document.writeln("O maior é: " + maior + "</p>")
+        document.writeln("O menor é: " + menor + "</p>")
+    </script>
+    <!-- fim do codigo Javascript -->
+
+    <!--
+    ler numero1
+    ler numero2 
+    ler numero3
+
+    maior <- numero1
+    menor <- numero1
+
+    se numero2 > maior
+        entao 
+            se numero2 >= numero3
+                entao 
+                    maior <- numero2
+                senao   
+                    maior <- numero3
+            fim-se            
+        senao
+            menor <- numero2
+            se numero3 > maior
+                entao 
+                    maior <- numero3
+            fim-se
+    fim-se
+
+    se numero3 < menor  
+        entao 
+            menor <- numero3
+    fim-se
+
+    escreva maior
+    escreva menor 
+    -->
+
+</body>
+
+</html>

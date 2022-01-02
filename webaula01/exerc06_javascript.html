@@ -16,8 +16,8 @@
             valorCompra = parseFloat(valorCompra);
 
             /* processamento */
-            if (valorCompra >= 5000) {
-                desconto = 0.2;
+            if (clienteVIP == False) {
+                desconto = 0;
             } else {
                 desconto = 0.15;
             }

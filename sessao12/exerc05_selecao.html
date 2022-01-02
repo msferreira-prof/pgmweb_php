@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Poupança Programada</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+    <script type="text/javascript">
+        /*
+        v.0
+            receber o total de ganhos
+            calcular o desconto 
+        v.1
+            receber o salario (total de ganhos)
+            calcular a aliquota
+            aplicar a aliquota sobre o total de ganhos
+            apresentar o desconto
+
+        v.2
+           receber o salario
+           se o salario for menor ou igual a 500, a aliquota será igual a 0%
+           se o salario for maior ou igual a 500.01 e menor ou igual a 1500, 
+              a aliquota será igual a 10%
+           se o salario for maior ou igual a 1500.01 e menor ou igual a 2500, 
+              a aliquota será igual a 15%
+           se o salario for maior ou igual a 2500.01, a aliquota será igual a 20%
+           aplicar a aliquota encontrada sobre o salario
+           apresentar o desconto
+
+        v.3   
+            receber o salario
+            se o salario for menor ou igual a 500 
+                entao 
+                    a aliquota será igual a 0%
+                senao     
+                    se o salario for maior ou igual a 500.01 e menor ou igual a 1500, 
+                        entao
+                            a aliquota será igual a 10%
+                        senao
+                            se o salario for maior ou igual a 1500.01 e menor ou igual a 2500,
+                                entao
+                                    a aliquota será igual a 15%
+                                senao
+                                    a aliquota será igual a 20%
+
+            desconto recebe ( salario * aliquota )
+            apresentar o desconto
+
+
+        v.3   
+            
+            ler salario
+            se salario <= 500 
+                entao 
+                    aliquota <- 0%
+                senao     
+                    se salario >= 500.01 e salario <= 1500, 
+                        entao
+                            aliquota <- 10%
+                        senao
+                            se salario >= 1500.01 e salario <= 2500
+                                entao
+                                    aliquota <- 15%
+                                senao
+                                    aliquota <- 20%
+                            fim-se
+                    fim-se
+            fim-se
+            desconto <- salario * aliquota
+            escrever desconto
+*/
+        var salario, aliquota, desconto;
+
+        salario = prompt("Informe o salario");
+
+        // verifica se o salario informado eh um numero
+        if (isNaN(salario)) {
+            alert("O salario informado não é um número");
+
+        } else {
+
+            if (salario <= 500) {
+                aliquota = 0;
+            } else {
+                if (salario >= 500.01 && salario <= 1500) {
+                    aliquota = 0.1;
+                } else {
+                    if (salario >= 1500.01 && salario <= 2500) {
+                        aliquota = 0.15;
+                    } else {
+                        aliquota = 0.2
+                    }
+                }
+            }
+
+            desconto = salario * aliquota
+            alert(desconto);
+        }
+    </script>
+
+</body>
+
+</html>

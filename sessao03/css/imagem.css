@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    width: 940px;
+    margin: 0 auto;     /* define as margens superior e inferior com 0 e as margens esquerda e direita sao calculadas para dispor o elemento no centro */
+    
+    /* 
+        define que o tamanho de um elemento eh calculado utilizando sua largura e altura.
+        border-box - define que a largura e altura incluem o tamanho das propriedade 'padding' e 'border', mas não incluem a propriedade 'margin'.  
+                     neste caso, a largura e altura serão 'fixas'.
+    */
+    box-sizing: border-box;
+}
+
+/* regras para a area de cabecalho da pagina */
+header {
+    margin-bottom: 10px;   /* define a margem inferior com 10px */
+}
+
+h1 {
+    color: #0000FF;
+    text-align: center;     /* alinha o texto ao centro do elemento */
+    padding: 20px 0;
+    background-color: rgb(222, 243, 218);
+}
+
+/* regras para o elemento com id igual a 'imagem-principal' */
+#imagem-principal {
+    padding: 10px;          /* define o espacamento entre a borda e o conteudo em 10px */
+    margin-bottom: 10px;
+/*    background-color: rgb(228, 228, 146); */
+}
+
+/* regras para o elemento img (imagem) */
+img {
+/*    width: 80%;    */              /* largura da imagem ocupa 80% da largura total do elemento */
+/*    height: 80%px; */              /* altura da imagem ocupa 80% da largura total do elemento */
+    width: 100%;                     /* largura da imagem ocupa 100% da largura total do elemento */
+    height: 300px;
+
+    /* centralizar uma imagem */
+    margin: 0 auto;                  /* define as margens top/bottom com 0 e left/right centraliza o elemento */
+    display: block;                  /* transforma o elemento 'imagem' em elemento de bloco */
+
+    border: 1px solid #0000FF;     /* insere uma borda na imagem */
+    border-radius: 10px;             /* arredonda os cantos da borda */
+    
+    box-shadow: 3px 3px 10px rgba(0,0,0,.3);   /* inclui uma borda como sombra */
+}
+
+/* regra para a area principal da pagina - elemento main e/ou subelementos */
+/* define um conjunto de regras para todos os elementos 'section' */
+section {
+    padding: 20px 0;                /* define espaco entre borda e conteudo em 20px (topo e lado inferior) */
+/*  border: 1px solid black; */     /* define uma borda para o elemento 'section' */
+}
+
+/* define um conjunto de regras para todos os elementos 'h3' em elementos 'section' */
+section h3 {
+    font-family: 'Noto Sans JP', sans-serif;
+    padding: 5px 5px 10px 0;
+    border-bottom: 1px solid #000000;   /* define uma borda inferior */
+}
+
+/* define um conjunto de regras para todos os elementos 'p' em elementos 'section' */
+section p {
+    font-family: 'Roboto Mono', monospace;
+    text-align: justify;                    /* alinha o texto do elemento 'p' como justificado */
+    padding: 5px 0;
+}
+
+/* define um conjunto de regras para todos os elementos 'article' em elementos 'section' */
+section article {
+    width: 100%;                    /* define que o elemento ocupa 1005 do elemento pai */
+    padding: 10px 5px 10px 25px;
+/*    
+    background-color: khaki;
+*/    
+    font-family: 'Open Sans Condensed', sans-serif;
+    color:rebeccapurple;
+    /* 
+        define que o tamanho de um elemento eh calculado utilizando sua largura e altura.
+        border-box - define que a largura e altura incluem o tamanho das propriedade 'padding' e 'border', mas não incluem a propriedade 'margin'.  
+                     neste caso, a largura e altura serão 'fixas'.
+    */
+    box-sizing: border-box;
+}
+
+/* define um conjunto de regras para todos os elementos 'h4' em elementos 'article' em elementos 'section' */
+section article h4 {
+    font-size: 1.2em;
+    padding: 2px 0;
+}
+
+/* define um conjunto de regras para todos os elementos 'p' em elementos 'article' em elementos 'section' */
+section article p {
+/* 
+    font-style: italic;
+*/    
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.2em;
+    padding: 6px 0;
+/*
+    background-color: lightsalmon;
+*/
+}
+
+/* define um conjunto de regras para o elemento com id igual a 'fontes' */
+#fontes {
+    font-family: 'Open Sans Condensed', sans-serif;
+    background-color: rgb(222, 243, 218);
+    padding-top: 10px ;
+/*
+    border: 1px solid black;
+    background-color: burlywood;
+*/    
+}
+
+/* define um conjunto de regras para os elementos 'h3' contido no elemento com id igual a 'fontes' */
+#fontes h3 {
+    color: #0000ff;
+    border-bottom: 1px solid rgb(0, 0, 255);
+}
+
+/* define um conjunto de regras para todos os elementos 'ul' contidos em um elemento com id igual a 'fontes' */
+#fontes ul {
+    list-style: none;           /* remove o 'bullet' indicador de itens da lista */
+    padding: 10px 0 10px 25px;  /* define a posicao dos elementos 'li' no elemento 'ul' */
+}
+
+/* define um conjunto de regras para todos os elementos 'li' de qualquer elemento 'ul' contidos em um elemento com id igual a 'fontes' */
+#fontes ul li {
+    padding: 5px 0; /* define padding inferior e superir em 5px, removendo o padding esquerdo e direito */
+/*    border: 1px solid blue; */
+}
+
+/* define um conjunto de regras para todos os elementos 'a' de qualquer elemento 'li' de qualquer elemento 'ul' contidos em um elemento com id igual a 'fontes' */
+#fontes ul li a {
+    text-decoration: none;
+/* 
+    define a ancora com largura ocupando 1005 do item da lista,
+    permitindo que o clique do mouse seja efetuado qualquer parte do item
+
+    display: block;
+    width: 100%;
+*/    
+} 
+
+/* define um cursor diferente ao passar pela ancora,  */
+#fontes ul li a:hover {
+    cursor: url(../img/lupa.cur), pointer;
+}

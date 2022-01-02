@@ -1,0 +1,73 @@
+.sobre {
+    width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 15px;
+}
+
+.sobre div {
+    padding: 10px;
+}
+
+.quem-somos p, .como-chegar p {
+    padding-top: 5px;
+    text-align: center;
+}
+
+.video-reserva {
+    padding: 10px;
+}
+
+.video-reserva video {
+    width: 100%;
+}
+
+
+.mapa-empresa {
+    padding: 10px;
+    border: 1px solid #470864;
+    border-radius: 4px;
+}
+
+.audio-empresa {
+    margin: 0 auto;
+    border: 1px solid #470864;
+    border-radius: 4px;
+}
+
+.audio-empresa audio {
+    width: 100%;
+}
+
+.nome-maiusculo {
+    text-transform: uppercase;   
+}
+
+.letra-azul {
+    color: blue;
+}
+
+.letra-verde {
+    color: green;
+}
+
+.nome-maiusculo-azul {
+    text-transform: uppercase;
+    color: blue;
+}
+
+.nome-maiusculo-azul-negrito {
+    text-transform: uppercase;
+    color: blue;
+    font-weight: bold;
+}
+
+.nome-maiusculo-verde {
+    text-transform: uppercase;
+    color: green;
+}
+
+.nome-maiusculo-verde-negrito {
+    text-transform: uppercase;
+    color: green;
+    font-weight: bold;
+}

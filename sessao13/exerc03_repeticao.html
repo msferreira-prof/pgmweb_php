@@ -1,0 +1,90 @@
+<!DOCType HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Template Exercícios Javascript</title>
+    <style>
+        .entrada,
+        .resultado,
+        .botoes {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Exercicio Javascript 3 - Lista Repetição</h2>
+
+    <!-- 
+        Construa um algoritmo que, para um grupo de cinqüenta valores inteiros, determine:
+        a) A soma dos valores positivos;
+        b) A quantidade de valores negativos.
+    
+        algoritmo Exercicio03_Repeticao
+        variaveis
+            valor        : inteiro
+            somaPositivos: inteiro
+            qtdNegativos : inteiro
+            contador     : inteiro
+    
+        inicio
+            
+            somaPositivo <- 0
+            qtdNegativo  <- 0
+
+            para contador de 1 ate 50 passo 1 faca
+            
+                escreva "Informe um valor inteiro Positivo ou Negativo"
+                ler valor
+
+                se valor >= 0 
+                    entao
+                        somaPositivo <- somaPositivo + valor
+                    senao
+                        qtdNegativo <- qtdNegativo + 1
+                fim-se
+
+            fim-para 
+
+            escreva "Soma dos Positivos: " , somaPositivo
+            escreva "Qtd  dos Negativos: " , qtdNegativos
+        
+        fim
+    
+    
+    -->
+
+
+
+
+
+    <!-- inicio do codigo Javascript -->
+    <script type="text/javascript">
+        var valor, somaPositivos, qtdNegativos, contador;
+
+        somaPositivos = 0;
+        qtdNegativos  = 0;
+
+        for( var contador = 0; contador < 5; contador++ ) {
+            
+            valor = prompt("Informe um valor inteiro Positivo ou Negativo");
+            valor = parseInt(valor);
+
+            if ( valor >= 0 ) {
+                somaPositivos = somaPositivos + valor;
+            } else {
+                qtdNegativos = qtdNegativos + 1;
+            }
+            
+        }
+
+        document.writeln("<p>Soma dos Positivos: " + somaPositivos + "</p>");
+        document.writeln("<p>Qtd  dos Negativos: " + qtdNegativos + "</p>");
+
+    </script>
+    <!-- fim do codigo Javascript -->
+
+</body>
+
+</html>

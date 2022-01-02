@@ -1,0 +1,43 @@
+<!DOCType HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Template Exercícios Javascript</title>
+    <style>
+        .entrada,
+        .resultado,
+        .botoes {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Template Exercicio Javascript sem formulário (elemento <code>form</code>)</h2>
+
+    <!-- inicio do codigo Javascript -->
+    <script type="text/javascript">
+        /* declara e iniciar variaveis na mesma instrucao */
+        var valorDeposito = 0;
+        var taxaJuros = 0;
+        var rendimento = 0;
+        var valorTotalRendim = 0;
+
+        /* entrada de dados */
+        valorDeposito = prompt("Informe o valor do Deposito");
+        taxaJuros = prompt("Informe a taxa de juros");
+
+        /* processamento */
+        rendimento = valorDeposito * taxaJuros / 100;
+        valorTotalRendim = parseFloat(valorDeposito) + rendimento;
+
+        /* saida de dados */
+        document.write("<p>Rendimentos em R$: " + rendimento + "</p>");
+        document.write("<p>Valor total com Rendimentos em R$: " + valorTotalRendim + "</p>");
+    </script>
+    <!-- fim do codigo Javascript -->
+
+</body>
+
+</html>

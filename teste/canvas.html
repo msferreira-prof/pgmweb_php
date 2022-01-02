@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Exercicio</title>
+    </head>
+    <body>
+        <canvas id="mycanvas" width="1200" height="600" style="border: 1px black solid;">
+        </canvas>
+
+        <script>            
+            var coordX = 10;
+            var coordY = 50;
+            var vetor = [70, 90, 10];
+
+            showVetor(vetor, coordX, coordY);
+            sort(vetor);
+
+            function showValue(valor, coordX, coordY) {
+                var canvas;
+                canvas = document.getElementById('mycanvas');
+                if (canvas.getContext('2d')) {
+                    var ctx = canvas.getContext('2d');
+                    ctx.font = '14 px serif';
+                    ctx.fillText(valor, coordX, coordY);
+                }
+            }
+
+            function drawLine(vetor, xOriginal, yOriginal, xNovo, yNovo) {
+                var canvas;
+                canvas = document.getElementById("mycanvas");
+                
+                if (canvas.getContext('2d')) {
+                    var ctx = canvas.getContext('2d');
+                    ctx.beginPath();
+                    ctx.moveTo(xOriginal, yOriginal);
+                    ctx.lineTo(xNovo, yNovo);
+                    ctx.stroke();
+                }
+            }
+
+            function showVetor(vetor, coordX, coordY, menorElemento) {              
+                for(var i=0; i<vetor.length; i++) {
+                    qtdDigitosElemento = toString(vetor[i]).length;
+                    coordX = coordX + 2 * qtdDigitosElemento;
+                    showValue(vetor[i], coordX, coordY);
+                }
+            }
+
+            function sort(vetor) {
+                var i, j;
+                var qtdDigitosElementos, xOriginal, xNovo, yOriginal, yNovo;
+                var alterou = false;
+                var tam = vetor.length;
+                
+                coordX = 10;
+                coordY = coordY + 50;
+
+                for (i=0; i<tam; i++) {
+
+                    menor = i;
+
+                    for (var j=i+1; j < vetor.length; j++) {
+                        if (vetor[j] < vetor[menor]) {
+                            menor = j;
+                            alterou = true;
+                        }
+
+                    }
+                    
+                    aux = vetor[i];
+                    vetor[i] = vetor[menor];
+                    vetor[menor] = aux;
+                    
+                    if (alterou) {
+                        alterou = false;
+                    
+                        showVetor(vetor, coordX, coordY);
+                        
+                        drawLine(vetor, xOriginal, yOriginal, xNovo, yNovo);
+
+                        coordY  = coordY + 50;
+
+                    }
+                }
+
+                return vetor;
+
+            }
+        </script>
+
+    </body>
+</html>

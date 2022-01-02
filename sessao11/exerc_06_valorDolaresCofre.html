@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Dólares no Cofre - Exercício Sequencial 06</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+    <script type="text/javascript">
+       
+        /* declaracao de variaveis */
+        var quantidadeDolares;
+        var cotacaoDoDia;
+        var valorRealDolaresCofre;
+        
+        /* entrada de dados */
+        quantidadeDolares = prompt("Informe a qtd de Dolares no cofre");
+      
+        cotacaoDoDia = prompt("Informe a cotacao do dia");
+
+        /* processamento */
+        valorRealDolaresCofre = quantidadeDolares * cotacaoDoDia;
+
+        /* saida de dados */
+        document.writeln("<div style='border: 1px solid black; margin: 10px;'>");
+        document.writeln(
+            "<p style='text-align: center; font-size: 20px; color: blue;'>O turista possui US$ " + 
+                quantidadeDolares + 
+                " no cofre. A cotação do Dia é de R$ " + 
+                cotacaoDoDia +
+                ", totalizando R$ " +
+                valorRealDolaresCofre +
+            ".</p>"
+        );
+
+        document.writeln("</div>");
+
+    </script>
+
+</body>
+
+</html>

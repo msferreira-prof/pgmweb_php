@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Rio Antigo - Bootstrap</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- define e insere um favicon no documento HTML -->
+    <link href="img/favicon_pgmweb.ico" rel="shortcut icon">
+
+    <!-- Bootstrap -->
+    <!-- insira este conteudo aqui que representa o CSS do Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Google  icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link href="css/meu-estilo.css" rel="stylesheet">
+
+    <link href="font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- seu codigo comeca aqui -->
+
+    <!-- container bootstrap -->
+    <header class="container">
+        <!-- linha (grid system), border-bottom, cor aplicada na borda, text-align: center (alinhamento de conteudo), background-color (cor de fundo) -->
+        <div class="row border-bottom border-primary text-center bg-light">
+            <!-- coluna (grid system) -->
+            <div class="col">
+                <h1>Rio antigo</h1>
+            </div>
+        </div>
+
+        <!-- menu -->
+        <!-- linha (grid system), margin-top: 4px, margin-bottom: 4; alinhamento de conteudo ao centro -->
+        <div class="row mt-4 mb-4 text-center">
+            <!-- coluna (grid system) -->
+            <div class="col">
+                <!-- ancora, tipo botao, cor do botao, botao largo / papel=botao (para ser lido por aplicações de acessibilidade) -->
+                <a href="index.html" class="btn btn-primary btn-lg" role="button">Início</a>
+                <a href="rioantigo_cards.html" class="btn btn-primary btn-lg" role="button">Imagens</a>
+                <a href="rioantigo_estorias.html" class="btn btn-primary btn-lg" role="button">Estórias</a>
+                <a href="rioantigo_lista.html" class="btn btn-primary btn-lg" role="button">Locais</a>
+                <a href="rioantigo_contato.html" class="btn btn-primary btn-lg" role="button">Contato</a>
+                <a href="sobre.html" class="btn btn-primary btn-lg" role="button">Sobre</a>
+            </div>
+        </div>
+
+        <div class="jumbotron">
+            <h1 class="display-4">Sobre antigo Rio de Janeiro</h1>
+            <div class="text-justify lead">
+                <p>O Rio de Janeiro completou 456 anos neste ano de 2021.</p>
+                <p>A proposta deste site é apresentar aos visitantes deste site, um conjunto de fotos que
+                    mostram como a cidade era na década de 1940, ou seja, há cerca de 80 anos.</p>
+                <p>Neste período ocorreu diversos acontecimentos, como por exemplo, a criação de uma
+                    universidade católica, a inauguração de maior cinema da cidade, a construção da avenida Presidente
+                    Vargas, a construção do <span data-toggle="tooltip" data-replacement="right"
+                        title="Instituto Militar de Engenharia" class="tooltip_sublinhado">IME</span> e a inauguração do Club de Regatas Botafogo.
+                </p>
+                <p>Outro fato, foi o aumento de vagas na construção civil, causando a migração de
+                    trabalhadores oriundos da região nordeste brasileira. Esta migração levou a criação de um ponto de
+                    encontro destes migrantes em São Cristóvão.</p>
+                <p>Para conhecer mais, acesse os itens de nosso menu.</p>
+                <hr class="my-4">
+                <p>Boa diversão!<span class="material-icons stateblue">
+                        sentiment_satisfied_alt
+                    </span></p>
+            </div>
+        </div>
+
+    </header>
+
+    <footer class="container text-center">
+        <!-- linha (grid system), border-top, cor aplicada na borda, background-color (cor de fundo) -->
+        <div class="row border-top border-primary bg-light">
+            <div class="col-2"></div>
+            <div class="col-8 text-center">
+                <h5>Fontes</h5>
+                <p>Esta página foi montada a partir do trabalho de <a
+                        href="https://theurbanearth.wordpress.com/2009/02/24/rio-de-janeiro-anos-40/"
+                        target="_blank"><span class="fonte-bold">Cecilia Lucchese</span></a>, disponível através do blog
+                    <a href="https://theurbanearth.wordpress.com/" target="_blank"><span class="fonte-bold">THE URBAN
+                            EARTH -
+                            Reflexões para um mundo urbanizado</span></a> de sua autoria.
+                </p>
+            </div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row bg-light my-0">
+            <div class="col font text-primary copyright">
+                <p>&copy; Copyright Pmg Web</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- seu codigo termina aqui -->
+
+    <!-- Bootstrap -->
+    <!-- insira este conteudo do Bootstrap aqui, antes do fechamento do "body" -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+    </script>
+
+    <!-- os scripts abaixo tambem podem ser utilizados ao inves dos dois acima -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+
+    <!-- tooltip -->
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+
+</body>
+
+</html>

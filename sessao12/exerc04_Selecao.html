@@ -1,0 +1,130 @@
+<!DOCType HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Exercícios Javascript</title>
+    <style>
+        .entrada, .resultado, .botoes {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Exercicio Javascript 04 - Lista Seleção</h2>
+    
+    <!-- inicio do codigo Javascript -->
+    <script type="text/javascript">
+        // declaracao de variaveis
+        var num1, num2, num3, num4;
+        var restoDiv_2, restoDiv_3;
+
+        // inicializacao de variaveis
+        num1 = 0;
+        num2 = 0;
+        num3 = 0;
+        num4 = 0;
+
+        restoDiv_2 = 0;
+        restoDiv_3 = 0;
+
+        // entrada de dados
+        num1 = prompt("Informe o 1o. numero");
+        num2 = prompt("Informe o 2o. numero");
+        num3 = prompt("Informe o 3o. numero");
+        num4 = prompt("Informe o 4o. numero");
+
+        // valida 1o numero
+        restoDiv_2 = num1 % 2;
+        restoDiv_3 = num1 % 3;
+
+        if (restoDiv_2 == 0 && restoDiv_3 == 0) {
+            document.writeln("<p>" + "O numero " + num1 + " é divisivel por 2 e 3" + "</p>");
+        } else {
+            document.writeln("<p>" + "O numero " + num1 + " não é divisivel por 2 e 3" + "</p>");
+        }
+        
+        // valida 2o numero
+        restoDiv_2 = num2 % 2;
+        restoDiv_3 = num2 % 3;
+
+        if (restoDiv_2 == 0 && restoDiv_3 == 0) {
+            document.writeln("<p>" + "O numero " + num2 + " é divisivel por 2 e 3" + "</p>");
+        } else {
+            document.writeln("<p>" + "O numero " + num2 + " não é divisivel por 2 e 3" + "</p>");
+        }
+
+        // valida 1o numero
+        restoDiv_2 = num3 % 2;
+        restoDiv_3 = num3 % 3;
+
+        if (restoDiv_2 == 0 && restoDiv_3 == 0) {
+            document.writeln("<p>" + "O numero " + num3 + " é divisivel por 2 e 3" + "</p>");
+        } else {
+            document.writeln("<p>" + "O numero " + num3 + " não é divisivel por 2 e 3" + "</p>");
+        }
+
+        // valida 4o numero
+        restoDiv_2 = num4 % 2;
+        restoDiv_3 = num4 % 3;
+
+        if (restoDiv_2 == 0 && restoDiv_3 == 0) {
+            document.writeln("<p>" + "O numero " + num4 + " é divisivel por 2 e 3" + "</p>");
+        } else {
+            document.writeln("<p>" + "O numero " + num4 + " não é divisivel por 2 e 3" + "</p>");
+        }
+
+    </script>
+    <!-- fim do codigo Javascript -->
+
+<!--
+    ler num1
+    ler num2
+    ler num3
+    ler num4
+    
+    restoDiv_2 = num1 / 2;
+    restoDiv_3 = num1 / 3;
+    
+    se restoDiv_2 igual a zero E restoDiv_3 = 0 
+        entao
+            escreva "O numero ", num1, "é divisivel por 2 e 3"
+        senao         
+            escreva "O numero ", num1, "não é divisivel por 2 e 3"
+    fim-se        
+    
+    restoDiv_2 = num2 / 2;
+    restoDiv_3 = num2 / 3;
+    
+    se restoDiv_2 igual a zero E restoDiv_3 = 0 
+        entao
+            escreva "O numero ", num2, "é divisivel por 2 e 3"
+        senao         
+            escreva "O numero ", num2, "não é divisivel por 2 e 3"
+    fim-se        
+    
+    restoDiv_2 = num3 / 2;
+    restoDiv_3 = num3 / 3;
+    
+    se restoDiv_2 igual a zero E restoDiv_3 = 0 
+        entao
+            escreva "O numero ", num3, "é divisivel por 2 e 3"
+        senao         
+            escreva "O numero ", num3, "não é divisivel por 2 e 3"
+    fim-se 
+    
+    restoDiv_2 = num4 / 2;
+    restoDiv_3 = num4 / 3;
+    
+    se restoDiv_2 igual a zero E restoDiv_3 = 0 
+        entao
+            escreva "O numero ", num4, "é divisivel por 2 e 3"
+        senao         
+            escreva "O numero ", num4, "não é divisivel por 2 e 3"
+    fim-se 
+-->
+
+</body>
+
+</html>

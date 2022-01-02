@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Eventos</title>
+
+</head>
+
+<body>
+    <h2>Exemplos através de Eventos</h2>
+
+    <form name="formulario">
+        <div>
+            <label forid="x">Informe X</label>
+            <input id="x" type="text" name="valorx">
+        </div>
+        <div>
+            <label forid="y">Informe Y</label>
+            <input id="y" type="text" name="valory">
+        </div>
+        <div>
+            <label forid="z">Informe Z</label>
+            <input id="z" type="text" name="valorz">
+        </div>
+
+        <input type="button" id="calcular" value="Clique aqui">
+        <input type="reset" value="Limpar">
+
+    </form>
+
+    <div>
+        <p id="resultadoX"></p>
+        <p id="resultadoZ"></p>
+    </div>
+
+    <script>
+        /* querySelector() / querySelectorAll() */
+        var btn = document.getElementById('calcular');
+    
+        /* 
+        Se X for maior que Y ou se Z for menor ou igual a 30, multiplique X por 2. 
+        Caso contrário, divida X por 2 e divida Z por 5;
+        */
+        function calcularValor() {
+            // var x = document.formulario.valorx.value;
+            // var y = document.formulario.valory.value;
+            // var z = document.formulario.valorz.value;
+
+            var x = document.getElementById('x').value;
+            var y = document.getElementById('y').value;
+            var z = document.getElementById('z').value;
+
+            if ((x > y) || (z <= 30)) {
+                x = x * 2;
+            } else {
+                x = x / 2;
+                z = z / 5;
+            }
+
+            var px = document.getElementById("resultadoX");
+            var pz = document.getElementById("resultadoZ");
+
+            px.innerHTML = x;
+            pz.innerHTML = z;
+
+            document.getElementById('x').value = x;
+            document.getElementById('z').value = z;
+        }
+
+        btn.onclick = calcularValor;
+
+    </script>
+</body>
+
+</html>

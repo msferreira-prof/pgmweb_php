@@ -1,0 +1,74 @@
+<!DOCType HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Template Exercícios Javascript</title>
+    <style>
+        .entrada,
+        .resultado,
+        .botoes {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Template Exercicio Javascript sem formulário (elemento <code>form</code>)</h2>
+
+    <!-- 
+        Elabore um algoritmo que imprima todos os números pares
+        compreendidos entre 85 e 907. O algoritmo deve também calcular e mostrar a
+        soma desses valores.
+    
+        algoritmo Exercicio05_Repeticao
+        variaveis
+            somaPositivos: inteiro
+            contador     : inteiro
+            modulo       : inteiro
+    
+        inicio
+            
+            somaPositivos <- 0
+
+            para contador de 85 ate 907 passo 1 faca
+
+                modulo <- contador / 2
+                se modulo = 0 
+                    entao
+                        escreva "Número par: " , contador
+                        somaPositivos <- somaPositivos + contador
+                fim-se
+
+            fim-para
+
+            escreva "Soma dos Positivos: " , somaPositivos
+        
+        fim
+    -->
+
+    <!-- inicio do codigo Javascript -->
+    <script type="text/javascript">
+        var valor, somaPositivos, modulo, resultado;
+
+        somaPositivos = 0;
+        resultado = "";
+
+        for (var contador = 85; contador <= 907; contador++) {
+
+            modulo = contador % 2;
+            if (modulo == 0) {
+                resultado = resultado + contador + ", ";
+                somaPositivos = somaPositivos + contador;
+            }
+
+        }
+
+        document.writeln("<p>Soma dos Positivos: " + somaPositivos + "</p>");
+        document.writeln("<p>Numeros pares encontrados: " + resultado + "</p>");
+    </script>
+    <!-- fim do codigo Javascript -->
+
+</body>
+
+</html>

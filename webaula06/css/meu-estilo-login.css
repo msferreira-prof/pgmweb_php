@@ -1,0 +1,35 @@
+#login .container #linha-login #coluna-login #caixa-login {
+    margin-top: 120px;
+    max-width: 600px;
+    height: 320px;
+    border: 1px solid #9C9C9C;
+    background-color: #EAEAEA;
+}
+
+#login .container #linha-login #coluna-login #caixa-login #login-form {
+    padding: 20px;
+}
+
+#login .container #linha-login #coluna-login #caixa-login #login-form #register-link {
+    margin-top: -85px;
+}
+
+.my-font-family {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.my-label-color-purple {
+    color: #470864;
+}
+
+.my-h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #470864;
+    border-bottom: 1px solid #470864;
+}
+
+.my-h3 {
+    font-size: 36px;
+    color: #470864;
+}
